@@ -1,4 +1,4 @@
-// Replay recorded agent traces against every cell, and log one row per model call to results/<date>.jsonl.
+// Replay recorded agent traces against every cell, and log one row per model call to results/<run start>.jsonl.
 //
 // A trace is a recorded agent conversation: the question, then assistant turns (tool calls) alternating
 // with tool results. Each model has its own traces (traces/<model>/, made by record.ts), and every cell
@@ -30,16 +30,10 @@ const filters = process.argv.slice(2);
 const matches = (id: string) => !filters.length || filters.some((f) => id.includes(f));
 const active = cells.filter((c) => matches(c.id) && process.env[c.keyEnv] && tracesOf(c).length);
 const runStarted = new Date().toISOString();
-// One file per day, e.g. results/2026-11-08.jsonl. A later run on the same day adds to it (say, to redo one
-// provider), so it refuses to run a cell that already has results there, which would count its tasks twice.
-const out = `results/${runStarted.slice(0, 10)}.jsonl`;
+// One file per run, named by when it started, e.g. results/2026-11-08T14-53Z.jsonl. Every row also records when
+// its request was sent.
+const out = `results/${runStarted.slice(0, 16).replace(':', '-')}Z.jsonl`;
 mkdirSync('results', { recursive: true });
-const existing = new Set(existsSync(out) ? readFileSync(out, 'utf8').trim().split('\n').filter(Boolean).map((line) => JSON.parse(line).cell) : []);
-const repeated = active.filter((c) => existing.has(c.id)).map((c) => c.id);
-if (repeated.length) {
-  console.error(`${out} already has results for ${repeated.join(', ')}. Remove their rows to run them again.`);
-  process.exit(1);
-}
 console.log(`${active.length} cells → ${out}`);
 
 // Providers run in parallel with each other. Within a provider, requests go one at a time, like a single

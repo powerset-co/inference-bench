@@ -1,15 +1,19 @@
 # Run the benchmark and open a pull request with the new results, for review before they reach main.
-# Started by hand for now (Actions tab → bench → Run workflow). Needs each provider's API key as a repository
-# secret, and "Allow GitHub Actions to create and approve pull requests" enabled in the repository settings.
+# Runs on the 1st of every month, and by hand (Actions tab → bench → Run workflow). Needs each provider's API
+# key as a repository secret, and "Allow GitHub Actions to create and approve pull requests" enabled in the
+# repository settings.
 #
-# With `filter` set (e.g. "together"), only matching cells run, to redo part of a run. That only saves the
-# raw results as an artifact, to merge into the run by hand; it doesn't publish anything.
+# With `filter` set (e.g. "vultr"), only matching cells run, for example to add a provider or answer a request
+# for updated results. Each run adds a new file to results/, and the charts average every run from the last
+# 30 days.
 name: bench
 on:
+  schedule:
+    - cron: '0 6 1 * *' # 06:00 UTC on the 1st of each month
   workflow_dispatch:
     inputs:
       filter:
-        description: Only run cells matching this (e.g. "together"); leave empty for a full run
+        description: Only run cells matching this (e.g. "vultr"); leave empty for a full run
         default: ''
 permissions:
   contents: write
@@ -41,17 +45,16 @@ jobs:
         if: always()
         with: { name: results, path: results/*.jsonl }
       - run: npm run report # fails, and opens no pull request, if any task never completed
-        if: inputs.filter == ''
       - name: Open a pull request
-        if: inputs.filter == ''
         env:
           GH_TOKEN: ${{ github.token }}
+          FILTER: ${{ inputs.filter }}
         run: |
-          branch="bench/$(date -u +%Y-%m-%d)"
+          branch="bench/$(date -u +%Y-%m-%d)-${{ github.run_id }}"
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
           git checkout -b "$branch"
           git add results README.md assets/banner.svg
           git commit -m "Benchmark run $(date -u +%F)"
           git push origin "$branch"
-          gh pr create --title "Benchmark run $(date -u +%F)" --body "New results from a benchmark run. Review the charts and README before merging."
+          gh pr create --title "Benchmark run $(date -u +%F)${FILTER:+ ($FILTER)}" --body "New results from a benchmark run. Review the charts and README before merging."

@@ -28,7 +28,7 @@ providers, not model intelligence.
 
 ![caching](results/charts/caching.svg)
 
-<sub>Results from 2026-11-09. Data: [summary](results/summary.csv), [every call](results/2026-11-09.jsonl).</sub>
+<sub>Last 30 days of runs: 2026-11-09. Data: [summary](results/summary.csv), [raw results](results/).</sub>
 <!-- results:end -->
 
 ## Methodology
@@ -46,8 +46,9 @@ Every provider gets the same settings for a given model (minimal reasoning, and 
 on rate limits isn't counted. Caching works normally within a task, and to see how much it helps, we also
 resend each task's last turn without the conversation cached.
 
-Each run goes through every task several times, and the charts show the average. A task that fails gets retried, and we only publish a run if every task
-finished on every provider.
+Each run goes through every task several times. A task that fails gets retried, and we only publish a run if
+every task finished. We run the benchmark monthly and on request, and the charts average every run from the last
+30 days. Some runs only cover one provider, so providers may be measured on different days.
 
 Cost is the list price for the tokens each provider reports. Credits and discounts aren't included.
 
@@ -81,7 +82,8 @@ npm run report                    # update the charts above and results/summary.
 
 ## Contributing
 
-Contributions are welcome. Feel free to open an issue or PR.
+Contributions are welcome. Feel free to open an issue or PR. To ask for updated results for a provider,
+[open a request](https://github.com/powerset-co/inference-bench/issues/new?template=updated-results.yml).
 
 Code is MIT licensed. Wikipedia text in `traces/` is from [Wikipedia](https://en.wikipedia.org)
 ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)), and the questions are from Google's FRAMES
