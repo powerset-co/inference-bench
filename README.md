@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, OpenAI, Anthropic" width="860"></p>
+<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenAI, Anthropic" width="860"></p>
 
 # inference-bench
 
