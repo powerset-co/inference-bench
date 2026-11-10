@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, OpenAI, Anthropic" width="860"></p>
+<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenAI, Anthropic" width="860"></p>
 
 # inference-bench
 
@@ -28,7 +28,7 @@ providers, not model intelligence.
 
 ![caching](results/charts/caching.svg)
 
-<sub>Last 30 days of runs: 2026-11-09. Data: [summary](results/summary.csv), [raw results](results/).</sub>
+<sub>Last 30 days of runs: 2026-11-09 to 2026-11-10. Data: [summary](results/summary.csv), [raw results](results/).</sub>
 <!-- results:end -->
 
 ## Methodology
