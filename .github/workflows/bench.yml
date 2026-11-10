@@ -54,6 +54,7 @@ jobs:
           git config user.email github-actions@users.noreply.github.com
           git checkout -b "$branch"
           git add results README.md assets/banner.svg
-          git commit -m "Benchmark run $(date -u +%F)"
+          title="chore(results): benchmark run $(date -u +%F)${FILTER:+ ($FILTER)}"
+          git commit -m "$title"
           git push origin "$branch"
-          gh pr create --title "Benchmark run $(date -u +%F)${FILTER:+ ($FILTER)}" --body "New results from a benchmark run. Review the charts and README before merging."
+          gh pr create --title "$title" --body "New results from a benchmark run. Review the charts and README before merging."
