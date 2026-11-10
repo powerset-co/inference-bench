@@ -100,7 +100,7 @@ mkdirSync('results/charts', { recursive: true });
 const callsOf = (cell: string) => tasksOf(byCell[cell]!).completed.flat().map((r) => r.totalMs / 1000);
 const figures = charts(summary.map((s) => ({ ...s, calls_s: callsOf(s.cell) })) as any);
 for (const [name, svg] of Object.entries(figures)) writeFileSync(`results/charts/${name}.svg`, svg);
-const BANNER_ORDER = ['sail', 'wafer', 'modal', 'baseten', 'fireworks', 'together', 'openai', 'anthropic'];
+const BANNER_ORDER = ['sail', 'wafer', 'modal', 'baseten', 'fireworks', 'together', 'vultr', 'openai', 'anthropic'];
 const shown = new Set(summary.map((s) => s.cell.split(/[-/]/)[0]));
 writeFileSync('assets/banner.svg', banner(BANNER_ORDER.filter((p) => shown.has(p))));
 

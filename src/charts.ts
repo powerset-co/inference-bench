@@ -36,6 +36,7 @@ const PROVIDERS: Record<string, { name: string; logo: string }> = {
   'fireworks-fast': { name: 'Fireworks · fast', logo: 'fireworks' },
   'fireworks-ultrafast': { name: 'Fireworks · ultrafast', logo: 'fireworks' },
   together: { name: 'Together AI', logo: 'together' },
+  vultr: { name: 'Vultr', logo: 'vultr' },
   openai: { name: 'OpenAI', logo: 'openai' },
   anthropic: { name: 'Anthropic', logo: 'anthropic' },
 };
@@ -264,13 +265,13 @@ export function charts(summary: CellSummary[]) {
  */
 export function banner(providers: string[]) {
   const NAMES: Record<string, string> = {
-    sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', openai: 'OpenAI', anthropic: 'Anthropic',
+    sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', vultr: 'Vultr', openai: 'OpenAI', anthropic: 'Anthropic',
   };
   // Width of each mark's visible glyph as a share of its square logo box (the rest is even side padding).
-  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, openai: 0.78, anthropic: 0.75 };
+  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.88, openai: 0.78, anthropic: 0.75 };
   // Helvetica Bold advance widths (per 1000 units of font size) for the letters in the names.
   const ADVANCE: Record<string, number> = {
-    ' ': 278, B: 722, F: 611, T: 611, g: 611, k: 556, s: 556, w: 778, y: 556,
+    ' ': 278, B: 722, F: 611, T: 611, V: 667, u: 611, g: 611, k: 556, s: 556, w: 778, y: 556,
     A: 722, I: 278, M: 833, O: 778, S: 667, W: 944, a: 556, c: 556, d: 611, e: 556, f: 333, h: 611, i: 278, l: 278, n: 611, o: 611, p: 611, r: 389, t: 333,
   };
   const SIZE = 36, FONT_SIZE = 18, MARK_TO_NAME = 10, GAP = 44, GRAY = '#7d8590';

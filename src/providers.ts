@@ -95,12 +95,16 @@ const BASETEN = { keyEnv: 'BASETEN_API_KEY', sessionHeader: 'x-session-affinity'
 const fireworks = openAICompatible('fireworks', 'https://api.fireworks.ai/inference/v1', 'FIREWORKS_API_KEY');
 const fw = (id: string) => fireworks(`accounts/fireworks/${id}`);
 
+// Vultr Serverless Inference (https://api.vultrinference.com/docs): OpenAI-compatible, keyed per inference
+// subscription. Its prefix cache is automatic and reported in usage, but cached input has no discount.
+const vultr = openAICompatible('vultr', 'https://api.vultrinference.com/v1', 'VULTR_INFERENCE_API_KEY');
+
 const together = openAICompatible('together', 'https://api.together.xyz/v1', 'TOGETHER_API_KEY');
 const openai = createOpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const anthropic = createAnthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 // --- Cells ----------------------------------------------------------------------------------------
-// Prices are [input, cached input, output, cache write?] in USD per 1M tokens: list prices as of 2026-11-08.
+// Prices are [input, cached input, output, cache write?] in USD per 1M tokens: list prices as of 2026-11-08 (Vultr: 2026-11-10).
 // Providers change them, so check each pricing page (linked below) and update this date when re-checking.
 
 // Sail: one cell per model × window. https://docs.sailresearch.com/pricing
@@ -146,6 +150,10 @@ export const cells: Cell[] = [
   { id: 'together/glm-5.3', keyEnv: 'TOGETHER_API_KEY', model: together('zai-org/GLM-5.3'), price: usd([1.4, 0.26, 4.4]) },
   { id: 'together/kimi-k3.1-pro', keyEnv: 'TOGETHER_API_KEY', model: together('moonshotai/Kimi-K3.1-Pro'), price: usd([2, 0.2, 10]) },
   { id: 'together/deepseek-v4.1-flash', keyEnv: 'TOGETHER_API_KEY', model: together('deepseek-ai/DeepSeek-V4.1-Flash-1017'), price: usd([0.3, 0.006, 1.2]) },
+
+  // Vultr: https://api.vultrinference.com/v1/models (no Kimi K3.1 Pro; both models are served at NVFP4)
+  { id: 'vultr/glm-5.3', keyEnv: 'VULTR_INFERENCE_API_KEY', model: vultr('glm-5.3'), price: usd([0.75, 0.75, 3]) },
+  { id: 'vultr/deepseek-v4.1-flash', keyEnv: 'VULTR_INFERENCE_API_KEY', model: vultr('deepseek-v4.1-flash-1017'), price: usd([0.15, 0.15, 0.6]) },
 
   // Closed models, as reference points: https://developers.openai.com/api/docs/pricing,
   // https://platform.claude.com/docs/en/about-claude/pricing (cache writes at the 5-minute / 30-minute rate)
