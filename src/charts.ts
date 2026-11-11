@@ -269,7 +269,7 @@ export function banner(providers: string[]) {
     sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', vultr: 'Vultr', opencode: 'OpenCode Zen', openai: 'OpenAI', anthropic: 'Anthropic',
   };
   // Width of each mark's visible glyph as a share of its square logo box (the rest is even side padding).
-  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.94, opencode: 0.45, openai: 0.78, anthropic: 0.75 };
+  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.714, opencode: 0.45, openai: 0.78, anthropic: 0.75 };
   // Helvetica Bold advance widths (per 1000 units of font size) for the letters in the names.
   const ADVANCE: Record<string, number> = {
     ' ': 278, B: 722, F: 611, T: 611, V: 667, u: 611, g: 611, k: 556, s: 556, w: 778, y: 556,
@@ -278,15 +278,25 @@ export function banner(providers: string[]) {
   const SIZE = 36, FONT_SIZE = 18, MARK_TO_NAME = 10, GAP = 44, GRAY = '#7d8590';
   const textWidth = (text: string) => [...text].reduce((w, c) => w + (ADVANCE[c] ?? 600), 0) * FONT_SIZE / 1000;
 
-  let x = 0; // left edge of the next visible glyph
-  const items = providers.map((p) => {
-    const glyph = SIZE * GLYPH[p];
-    const boxX = x - (SIZE - glyph) / 2;
-    const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
-      `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
-    x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
-    return item;
+  // Up to five providers per row, with rows balanced (9 → 5 + 4) and each one centered.
+  const PER_ROW = 5, ROW_GAP = 20, SCALE = 0.85; // SCALE sets the displayed size
+  const rowCount = Math.ceil(providers.length / PER_ROW);
+  const perRow = Math.ceil(providers.length / rowCount);
+  const rows = Array.from({ length: rowCount }, (_, i) => {
+    let x = 0; // left edge of the next visible glyph
+    const items = providers.slice(i * perRow, (i + 1) * perRow).map((p) => {
+      const glyph = SIZE * GLYPH[p];
+      const boxX = x - (SIZE - glyph) / 2;
+      const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
+        `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
+      x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
+      return item;
+    });
+    return { items, width: x - GAP };
   });
-  const width = Math.ceil(x - GAP + 8); // a little slack for font differences
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${SIZE}" viewBox="-4 0 ${width} ${SIZE}" font-family='${FONT}'>\n${items.join('\n')}\n</svg>\n`;
+  const width = Math.ceil(Math.max(...rows.map((r) => r.width)) + 8); // a little slack for font differences
+  const height = rowCount * SIZE + (rowCount - 1) * ROW_GAP;
+  const body = rows.map((r, i) =>
+    `<g transform="translate(${((width - 8 - r.width) / 2).toFixed(1)} ${i * (SIZE + ROW_GAP)})">\n${r.items.join('\n')}\n</g>`);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${Math.round(width * SCALE)}" height="${Math.round(height * SCALE)}" viewBox="-4 0 ${width} ${height}" font-family='${FONT}'>\n${body.join('\n')}\n</svg>\n`;
 }
