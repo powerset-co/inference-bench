@@ -117,7 +117,7 @@ const table = [
 const days = rows.map((r) => r.time.slice(0, 10)).sort();
 const sent = `Last ${WINDOW_DAYS} days of runs: ${days[0] === days.at(-1) ? days[0] : `${days[0]} to ${days.at(-1)}`}`;
 const section = [
-  ...Object.keys(figures).map((name) => `![${name}](results/charts/${name}.svg)\n`),
+  ...Object.keys(figures).map((name) => `<img src="results/charts/${name}.svg" alt="${name}" width="100%">\n`),
   `<sub>${sent}. Data: [summary](results/summary.csv), [raw results](results/).</sub>`,
 ].join('\n');
 console.log(table.join('\n'));
