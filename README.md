@@ -68,6 +68,8 @@ npm run report                    # update the charts above and results/summary.
   Responses API, while everything else here uses Chat Completions. It doesn't stream, so its time isn't
   split into waiting and generating. On it, Kimi K3.1 Pro often ends a turn without making the tool call it
   describes, which would stop a real agent, so its numbers may be slightly optimistic.
+- OpenCode Zen is a gateway rather than an inference provider. It forwards each request to providers it
+  doesn't name, so its numbers include that routing.
 - Spot tiers, like Fireworks', are left out. Their capacity varies too much to measure fairly in a single run.
 - Providers may run the same model differently, for example at a different precision. That's part of what's
   compared.

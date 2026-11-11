@@ -269,7 +269,7 @@ export function banner(providers: string[]) {
     sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', vultr: 'Vultr', opencode: 'OpenCode Zen', openai: 'OpenAI', anthropic: 'Anthropic',
   };
   // Width of each mark's visible glyph as a share of its square logo box (the rest is even side padding).
-  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.94, opencode: 0.62, openai: 0.78, anthropic: 0.75 };
+  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.94, opencode: 0.75, openai: 0.78, anthropic: 0.75 };
   // Helvetica Bold advance widths (per 1000 units of font size) for the letters in the names.
   const ADVANCE: Record<string, number> = {
     ' ': 278, B: 722, F: 611, T: 611, V: 667, u: 611, g: 611, k: 556, s: 556, w: 778, y: 556,
