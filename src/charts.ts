@@ -278,7 +278,7 @@ export function banner(providers: string[]) {
   const textWidth = (text: string) => [...text].reduce((w, c) => w + (ADVANCE[c] ?? 600), 0) * FONT_SIZE / 1000;
 
   // Up to five providers per row, with rows balanced (9 → 5 + 4) and each one centered.
-  const PER_ROW = 5, ROW_GAP = 20;
+  const PER_ROW = 5, ROW_GAP = 20, SCALE = 0.85; // SCALE sets the displayed size
   const rowCount = Math.ceil(providers.length / PER_ROW);
   const perRow = Math.ceil(providers.length / rowCount);
   const rows = Array.from({ length: rowCount }, (_, i) => {
@@ -297,5 +297,5 @@ export function banner(providers: string[]) {
   const height = rowCount * SIZE + (rowCount - 1) * ROW_GAP;
   const body = rows.map((r, i) =>
     `<g transform="translate(${((width - 8 - r.width) / 2).toFixed(1)} ${i * (SIZE + ROW_GAP)})">\n${r.items.join('\n')}\n</g>`);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="-4 0 ${width} ${height}" font-family='${FONT}'>\n${body.join('\n')}\n</svg>\n`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${Math.round(width * SCALE)}" height="${Math.round(height * SCALE)}" viewBox="-4 0 ${width} ${height}" font-family='${FONT}'>\n${body.join('\n')}\n</svg>\n`;
 }
