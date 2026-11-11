@@ -103,8 +103,14 @@ const together = openAICompatible('together', 'https://api.together.xyz/v1', 'TO
 const openai = createOpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const anthropic = createAnthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// OpenCode Zen (https://opencode.ai/docs/zen/): a pay-as-you-go gateway that routes each model to upstream
+// providers. An x-opencode-session header per conversation keeps a conversation on one route so its prompt
+// cache is reused (https://opencode.ai/docs/console/harnesses).
+const opencode = openAICompatible('opencode', 'https://opencode.ai/inference/openai/v1', 'OPENCODE_API_KEY');
+const OPENCODE = { keyEnv: 'OPENCODE_API_KEY', sessionHeader: 'x-opencode-session' };
+
 // --- Cells ----------------------------------------------------------------------------------------
-// Prices are [input, cached input, output, cache write?] in USD per 1M tokens: list prices as of 2026-11-08 (Vultr: 2026-11-10).
+// Prices are [input, cached input, output, cache write?] in USD per 1M tokens: list prices as of 2026-11-08 (Vultr, OpenCode: 2026-11-10).
 // Providers change them, so check each pricing page (linked below) and update this date when re-checking.
 
 // Sail: one cell per model × window. https://docs.sailresearch.com/pricing
@@ -154,6 +160,10 @@ export const cells: Cell[] = [
   // Vultr: https://api.vultrinference.com/v1/models (no Kimi K3.1 Pro; both models are served at NVFP4)
   { id: 'vultr/glm-5.3', keyEnv: 'VULTR_INFERENCE_API_KEY', model: vultr('glm-5.3'), price: usd([0.75, 0.75, 3]) },
   { id: 'vultr/deepseek-v4.1-flash', keyEnv: 'VULTR_INFERENCE_API_KEY', model: vultr('deepseek-v4.1-flash-1017'), price: usd([0.15, 0.15, 0.6]) },
+
+  // OpenCode Zen: https://opencode.ai/zen/v1/models (no Kimi K3.1 Pro on pay-as-you-go, only on the Go subscription)
+  { id: 'opencode/glm-5.3', ...OPENCODE, model: opencode('glm-5.3'), price: usd([1.4, 0.26, 4.4]) },
+  { id: 'opencode/deepseek-v4.1-flash', ...OPENCODE, model: opencode('deepseek-v4.1-flash'), price: usd([0.3, 0.006, 1.2]) },
 
   // Closed models, as reference points: https://developers.openai.com/api/docs/pricing,
   // https://platform.claude.com/docs/en/about-claude/pricing (cache writes at the 5-minute / 30-minute rate)

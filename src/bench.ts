@@ -152,7 +152,7 @@ async function attempt(cell: Cell, messages: ModelMessage[], tag: string, sessio
     maxOutputTokens: 2048,
     maxRetries: 0,
     abortSignal: AbortSignal.timeout(TIMEOUT_MS),
-    // Providers that route by session (Baseten) get one session per task, as a real agent would send.
+    // Providers that route by session (Baseten, OpenCode) get one session per task, as a real agent would send.
     headers: cell.sessionHeader ? { [cell.sessionHeader]: session } : undefined,
   } as const;
 
