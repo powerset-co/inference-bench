@@ -277,15 +277,25 @@ export function banner(providers: string[]) {
   const SIZE = 36, FONT_SIZE = 18, MARK_TO_NAME = 10, GAP = 44, GRAY = '#7d8590';
   const textWidth = (text: string) => [...text].reduce((w, c) => w + (ADVANCE[c] ?? 600), 0) * FONT_SIZE / 1000;
 
-  let x = 0; // left edge of the next visible glyph
-  const items = providers.map((p) => {
-    const glyph = SIZE * GLYPH[p];
-    const boxX = x - (SIZE - glyph) / 2;
-    const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
-      `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
-    x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
-    return item;
+  // Up to five providers per row, with rows balanced (9 → 5 + 4) and each one centered.
+  const PER_ROW = 5, ROW_GAP = 20;
+  const rowCount = Math.ceil(providers.length / PER_ROW);
+  const perRow = Math.ceil(providers.length / rowCount);
+  const rows = Array.from({ length: rowCount }, (_, i) => {
+    let x = 0; // left edge of the next visible glyph
+    const items = providers.slice(i * perRow, (i + 1) * perRow).map((p) => {
+      const glyph = SIZE * GLYPH[p];
+      const boxX = x - (SIZE - glyph) / 2;
+      const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
+        `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
+      x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
+      return item;
+    });
+    return { items, width: x - GAP };
   });
-  const width = Math.ceil(x - GAP + 8); // a little slack for font differences
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${SIZE}" viewBox="-4 0 ${width} ${SIZE}" font-family='${FONT}'>\n${items.join('\n')}\n</svg>\n`;
+  const width = Math.ceil(Math.max(...rows.map((r) => r.width)) + 8); // a little slack for font differences
+  const height = rowCount * SIZE + (rowCount - 1) * ROW_GAP;
+  const body = rows.map((r, i) =>
+    `<g transform="translate(${((width - 8 - r.width) / 2).toFixed(1)} ${i * (SIZE + ROW_GAP)})">\n${r.items.join('\n')}\n</g>`);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="-4 0 ${width} ${height}" font-family='${FONT}'>\n${body.join('\n')}\n</svg>\n`;
 }
