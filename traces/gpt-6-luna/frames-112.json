@@ -1,0 +1,1182 @@
+{
+  "id": "frames-112",
+  "question": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?",
+  "answer": "£559.8 million",
+  "recordedWith": "openai/gpt-6-luna",
+  "messages": [
+    {
+      "role": "user",
+      "content": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby player university attended"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Arkansas Razorbacks: Retrieved June 1, 2026. University of Arkansas, Men&#039;s Rugby, &quot;About Men&#039;s Rugby - Men&#039;s Rugby - Intramural/Recreational Sports - University of Arkansas&quot;. Archived\nDeaths in January 2026: of Yad Sarah. Ian McCrae, 84, Scottish rugby union player (Gordonians, national team). Randy McMillan, 67, American football player (Baltimore/Indianapolis\nCanterbury Boys' High School: former rugby league player (also attended Cleveland Street High School and Kingsgrove High School) George Peponis, former rugby league player who represented\n2026 in New Zealand: 1952). Sir Tamati Reedy, rugby union player (East Coast, Thames Valley, New Zealand Maori), linguist and anthropologist (University of Waikato), public servant\nGeorge Mitchell (rugby league): Mitchell and McLeod as notable Richmond players in the match. The Herald also reported positively on Mitchell&#039;s performance and adaptation to rugby league."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nFred McLeod: Fred McLeod may refer to: Fred McLeod (golfer) Fred McLeod (sportscaster) Fred McLeod (rugby union) This disambiguation page lists articles about people\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nGordon Dixon (rugby union): appointments, as is the case with (short-term SRU chief executive and chairman) Fred McLeod, would be on an interim basis to the AGM in June. I believe the general\nCharlie Ritchie: 1933 – 29 September 2008) was a Scottish rugby union player. He became the 111th President of the Scottish Rugby Union. He went to Ferry Hill Primary School"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union.\n\n\n== Rugby union career ==\n\n\n=== Amateur career ===\nMcLeod went to Daniel Stewart's College in Edinburgh. He played rugby for the school team.\nHe then played for Stewart's College FP. He played for the club for 23 years until in 1970 a detached retina forced him to quit his playing career.\n\n\n=== Administrative career ===\nHe became a club selector of Stewart's College FP in 1970.\nWhen Stewart's College FP and Melville College FP merged in 1973 to form Stewart's Melville, McLeod became Secretary of the new club. He later became President of  Stewart's Melville.\nIn 1979 he was secretary of the Co-Optimists. He managed them to the final of the Hong Kong Sevens in 1981 and the quarter-finals in 1986. He also took the side on tour to Zimbabwe and later became a President of the Co-Optimists.\nHe was elected to the SRU committee in 1981.\nHe became SRU Vice-president in 1985.\nHe became the 110th President of the Scottish Rugby Union. He served one year from 1996 to 1997.\nHis spell of the Presidency was notable as he had to deal with the new professional era of rugby union in Scotland. Despite the SRU professionalising the District sides, the situation was tense as many still argued that the club sides should be turned professional instead.\nMcLeod was one of the three IRB members who recommended professionalism for the sport in a 1995 report. The National newspaper concluded:  'Fred got pelters for that around Murrayfield but stood his ground and was proven correct' and also backed Jim Telfer in his view that the District sides should be professional and not the club sides.\nMcLeod also had to deal with England's expulsion from the Five Nations Championship in 1996. This was short-term and England played in the next tournament.\nHe had to step in as SRU chairman in 2005 when the previous chairman David Mackay and chief executive Phil Anderton were forced out of the post. This lasted until the summer of that year when Allan Munro took over as chairman; and Gordon McKie became the chief executive.\n\n\n== Tributes ==\nAndy Irvine:\n\nFreddie was rugby through and through. He was a great servant to the game and I really  enjoyed working with him.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Daniel Stewart's College endowment financial year July 31 2023 endowment university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Berea College: Institutions Listed by Fiscal Year 2025 Endowment Market Value&quot; (XLSX). National Association of College and University Business Officers (NACUBO). Retrieved\nPrinceton University: 1, 2011). &quot;Colleges with the Biggest Endowment Per Student&quot;. CNBC. Archived from the original on August 14, 2023. Retrieved August 14, 2023. Mukherji,\nStanford University: Retrieved July 4, 2024. As of August 31, 2023. &quot;Stanford University reports return on investment portfolio, value of endowment&quot;. October 12, 2023. Archived\nJames Stewart: called Stewart&#039;s performance emotionless, and Eileen Creelman of The New York Sun wrote that he made little attempt to look or sound French. Stewart&#039;s next\nMcGill University: Tuesday, October 11, 2005. University enrolment&quot;. Archived from the original on July 20, 2008. Retrieved July 20, 2008. &quot;Endowment Growth&quot; (PDF). Archived"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby university attended university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Arkansas Razorbacks: Retrieved June 1, 2026. University of Arkansas, Men&#039;s Rugby, &quot;About Men&#039;s Rugby - Men&#039;s Rugby - Intramural/Recreational Sports - University of Arkansas&quot;. Archived\nSOAS University of London: business, alumni include: Fred Eychaner, American businessman and philanthropist Armorial of UK universities List of universities in the UK Not be confused\nList of University of Edinburgh people: Henry Thomas Sylvester, major Indian Mutiny James John McLeod Innes, lieutenant general Valentine McMaster, Army surgeon Andaman Islands expedition Campbell\nFrederick Banting: remembered him for studying late into the night. Besides being a successful rugby player, however, he was otherwise undistinguished. His grades—now without\nBig Game (American football): home Big Game to University of Washington 72–0, while Stanford played rugby against its new Big Game opponent Santa Clara University, which would take"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "University \"endowment\" \"July 31, 2023\" university endowment size"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: London Endowment (as of July 31, 2023)&quot; (PDF). Imperial College London. 31 January 2024. Retrieved 16 June 2024. &quot;Cambridge University Endowment Fund:\nMountain East Conference: 2018. Retrieved September 15, 2018. &quot;All institutes in WV ranked by size of endowment · CollegeDB.app&quot;. collegedb.app. Retrieved 2025-08-09. &quot;Annual report\nTexas A&M University–Corpus Christi: A&amp;M University-Corpus. &quot;Brand and Style Guide&quot;. Texas A&amp;M University-Corpus Christi. Retrieved July 31, 2023. &quot;Universities&quot;. The Texas A&amp;M University System\nSt. Mark's School (Massachusetts): full-scale fundraising campaign, which more than doubled the size of the school&#039;s endowment. St. Mark&#039;s began accepting day students in 1944, black students\nTexas A&M University: Interim President of Texas A&amp;M University&quot;. Texas A&amp;M Today. July 30, 2023. Archived from the original on July 31, 2023. Retrieved July 30, 2023. &quot;Former"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"university\" rugby Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nIain Todd: Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union. Born in Clouston Street, Glasgow, Todd\nMacLeod: (footballer) (fl 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott\nApril 25: William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby university endowment university attended rugby player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Big Game (American football): home Big Game to University of Washington 72–0, while Stanford played rugby against its new Big Game opponent Santa Clara University, which would take\nDeaths in February 2024: author and illustrator, suicide. Don McKay, 86, New Zealand rugby union player (Auckland, national team). Robin McLeod, 72, Canadian surgeon. Miguel Ángel\nSt. Peter's Preparatory School: Prep star Jackson awaits his NFL call; Rosario to Florida; former Friar McLeod resurfaces at St. Benedict&#039;s&quot;, The Hudson Reporter, April 25, 2010. Accessed"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Endowment (as of July 31, 2023)\" university list"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: College London Endowment (as of July 31, 2023)&quot; (PDF). Imperial College London. 31 January 2024. Retrieved 16 June 2024. &quot;Cambridge University Endowment Fund:"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_9",
+          "toolName": "get_page",
+          "input": {
+            "title": "List of universities in the United Kingdom by endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_9",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The following is a list of British universities ordered by their financial endowments, expressed in pounds sterling at fair value.\nBritish charity funds are made up of restricted reserves, which can only be used for specific purposes, and unrestricted reserves, which could be used for any activity within the charity's scope. The statement of recommended practice (SORP) defines endowments as specific funds with both restrictions over the endowments' income and intention from the donors to establish such endowments. In addition, these reserves must either be held indefinitely and cannot be converted into income without permission (known as permanent endowment funds) or could be converted into income at trustees' discretion (known as expendable endowment). Updated SORP guidance published in 2007 prohibits donations with no specific purpose by the donor (unrestricted) and \"with no requirement for maintenance of the original capital\" from being treated as endowment. While restrictive funds are not considered endowments under the SORP's accounting guidance, institutions sometimes use the term \"endowments\" broadly to refer to the sum of all funds that generate income for the institution's operation and activities. Figures listed below account for funds defined by the SORP as endowment.\nAll sources are official audited financial statements published in the respective fiscal years. Note that changes to the Financial Reporting Standards (FRS 102) and the SORP in 2015 mean endowments as of 2016 are not directly comparable in all cases with those for previous years.\n\n\n== Endowments over £1 billion ==\n\n\n== Endowments from £100 million to £1 billion ==\n\n\n== Endowments from £10 million to £100 million ==\n\n\n== Specialist Higher Education Institutions ==\n\n\n== Endowments per student greater than £10,000 ==\n\nNotes:\n† Excluding the endowments of the autonomous colleges \n\n\n== See also ==\nArmorial of UK universities\nList of universities in the United Kingdom\nList of UK universities by date of foundation\nList of universities in the United Kingdom by enrolment\nLists of institutions of higher education by endowment size\n\n\n== Notes ==\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_10",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"attended\" university rugby player Scottish"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_10",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Deaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho\nGraeme McDowell:  he attended Coleraine Academical Institution. McDowell studied engineering at Queen&#039;s University in Belfast, then transferred to the University of Alabama\nRory McIlroy: complete the modern career grand slam—after Gene Sarazen, Ben Hogan, Gary Player, Jack Nicklaus, and Tiger Woods—and the first European to do so. McIlroy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_11",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"college\" rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_11",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nColin Rigby: president to be elected from Stewarts Melville, the other 2 Presidents being Fred McLeod and Lex Govan. Rigby put in place a new governing structure for the SRU\nMichael Campbell: boys, Campbell dreamed of playing for the All Blacks, and began playing rugby union, but his mother vetoed his participation. While he was talented at\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_12",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby \"University of\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_12",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nIain Todd: with his brother, David Todd. He played rugby for the school. On leaving school Todd went to the University of Glasgow to study medicine. While he was\nMacLeod: Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott MacLeod (born\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_13",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby player university \"endowment\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_13",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Wellington College, New Zealand: Chess Champion Fred White – New Zealand-born Australian physicist and ornithologist who was Chairman of CSIRO Leni Apisai – rugby union player Ernest Beechey\nUniversity of Stirling: Lewis, presenter, BBC Radio 4 Money Box Ally McCrae, radio presenter Greg McHugh, actor, writer Rhona McLeod, Scottish broadcaster Fiona Ritchie, radio\nSt. Peter's Preparatory School: Prep star Jackson awaits his NFL call; Rosario to Florida; former Friar McLeod resurfaces at St. Benedict&#039;s&quot;, The Hudson Reporter, April 25, 2010. Accessed\nBig Game (American football): home Big Game to University of Washington 72–0, while Stanford played rugby against its new Big Game opponent Santa Clara University, which would take\nList of Mexican Americans: of the LA Marathon Inaki Basauri – rugby union player, member the U.S. national team Crystl Bustos – softball player, two-time Olympic Gold and silver"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_14",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"Stewart's College\" university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_14",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_15",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "university rugby player \"Fred McLeod\" attended university endowment July 31"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_15",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_16",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby New Zealand university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_16",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nMacLeod: (1900–1989), New Zealand cricketer Eddie McLeod (footballer) (fl 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer)\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nDeaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho\nMay 1976: 20 &quot;Trude Guermonprez&quot;, The New York Times, May 11, 1976, p. 36 &quot;Fred McLeod, Golfer, Dies; Won U.S. Open in 1908&quot;, The New York Times, May 11, 1976, p"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_17",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby university Scottish rugby player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_17",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nIain Todd: Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union. Born in Clouston Street, Glasgow, Todd\nMacLeod: (footballer) (fl 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott\nApril 25: William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nDeaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_18",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "rugby player \"Fred McLeod\" university attended college rugby biography"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_18",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "April 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nGraeme McDowell:  he attended Coleraine Academical Institution. McDowell studied engineering at Queen&#039;s University in Belfast, then transferred to the University of Alabama\nDeaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho\nRory McIlroy: those mistakes again.&quot; McIlroy is a fan of Ulster Rugby and has interrupted his busy golf schedule to attend matches at Ravenhill Stadium in Belfast. McIlroy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_19",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"rugby\" university player endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_19",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_20",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "List universities by endowment as of July 31 2023 Imperial College endowment figure"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_20",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Golden triangle (universities): April 2023. Retrieved 2 November 2016. The &quot;Golden Triangle&quot; of ... the universities of Oxford and Cambridge, Imperial College and University College of London\nUniversity of Oxford: The combined endowment figure of £8.708 billion makes Oxford hold the largest endowment of any university in the UK. The college figure does not reflect\nUniversity College London: and endowments (2022/23 – £31.5 million). At year end UCL had endowments of £174.8 million (31 July 2023 – £156.8 million) and total net assets of £2.19 billion\nList of universities in Wales: Carmarthen UWTSD Wrexham Northop Wrexham St Asaph Wrexham As of July 2025[update], there are nine universities providing higher education in Wales. Eight are campus-based:\nUniversity of Michigan: classified as an &quot;R1: Doctoral Universities – Very high research activity&quot; by the Carnegie Classification. It consists of 19 schools and colleges, offering"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_21",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "rugby union player \"Fred McLeod\" university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_21",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nIain Todd: Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union. Born in Clouston Street, Glasgow, Todd\nMacLeod: 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott MacLeod (born\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nDeaths in September 2019: traffic collision. Jeff Sayle, 77, Australian rugby union player. Ed Simonini, 65, American football player (Baltimore Colts, New Orleans Saints), cancer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_22",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby player New Zealand university rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_22",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Auckland Rugby Union: The Auckland Rugby Union is a New Zealand provincial rugby union. The union was established in 1883 and was originally responsible for the administration\nCanterbury Rugby Football Union: Blacks of any New Zealand region, with Scott Barrett becoming Canterbury&#039;s 200th All Black in 2016.[citation needed] The Canterbury Rugby Football Union\n1944 Auckland Rugby League season: Maritime Club which he had joined post war as a player nominated him to receive the New Zealand Rugby League&#039;s medallion of life membership which was\n2026 in New Zealand: 1952). Sir Tamati Reedy, rugby union player (East Coast, Thames Valley, New Zealand Maori), linguist and anthropologist (University of Waikato), public servant\nWellington College, New Zealand: and New Zealand Chess Champion Fred White – New Zealand-born Australian physicist and ornithologist who was Chairman of CSIRO Leni Apisai – rugby union"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_23",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod (golfer)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_23",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Frederick Robertson McLeod (25 April 1882 – 8 May 1976) was a Scottish-born golfer who played primarily in the United States. He had a distinguished career in the United States, which included a victory in the 1908 U.S. Open.\n\n\n== Early life ==\nHe was born in Kirk Ports, North Berwick, East Lothian, Scotland. McLeod's mother was from Bolton in East Lothian and his father Neil was from the Isle of Skye. His father was employed as the manager of a temperance book stall and also worked as a caddie. \nMcLeod began his working life as a postman at the age of fourteen. At seventeen he joined the Bass Rock Golf Club in North Berwick, which was a club for artisans. It did not have its own course and the members played on a public links. McLeod soon had some success in local competitions.\n\n\n== Professional career ==\nIn 1903, he left for the United States to try his luck as a golf professional there, a route followed by many other Scots around that time as the golf clubs which were springing up rapidly in the U.S. had no experienced local professionals on whom they could call. He quickly found employment at the Rockford Country Club in Illinois, and later worked at several other clubs.\nDespite not having been a leading player in Scotland, McLeod soon made a name for himself as a first rate tournament player in the U.S. He acquired the nickname \"the wasp\" from fellow American professionals. He entered his first U.S. Open within weeks of his arrival in America, and later that year he was fifth at the Western Open. He won the Riverside Open in 1905 and the Western PGA Championship in both 1905 and 1907. The principal achievement of his career was his victory in the 1908 U.S. Open at Myopia Hunt Club in South Hamilton, Massachusetts. He was level with Willie Smith after four rounds, but won the playoff by 77 shots to 83. McLeod was five feet four inches tall, and at the end of the tournament he was weighed at 7 stone 10 pounds (108 pounds, 49 kilograms), making him the smallest man ever to take the title. He competed in the U.S. Open twenty-two times and had eight top ten finishes.\nMcLeod won several more professional tournaments: the 1909 and 1920 North and South Open at Pinehurst, the 1912 Shawnee Open, the 1924 St. Petersburg Open, and the 1927 Maryland Open. In 1919, he was runner up to Jim Barnes in the PGA Championship. He took part in both the 1921 challenge match between teams of U.S based and British based professionals at Gleneagles, Perth and Kinross, Scotland, and in the follow-up 1926 match which was the immediate precursor of the first Ryder Cup match in 1927. \nDuring this period McLeod wintered at Temple Terrace, Florida (1925–26) where he worked with James Thomson from North Berwick. It was in Florida that McLeod was involved in the first 'Professional Golf League' in 1925. As the number of golf courses increased, many of top professionals were signed up in the winter months to represent the Florida clubs in a team competition. Walter Hagen and Joe Kirkwood, Sr. were signed up to Pasadena Country Club, Jim Barnes and Fred McLeod played for Temple Terrace Golf and Country Club and Gene Sarazen and Leo Diegel represented Hollywood Country Club.  Although exhibition matches were still popular, this team format increased the players' earnings as they received 60% of the $2 entrance fee paid by spectators at the gate. At Augusta National Golf Club, he played in the first four editions of the Masters Tournament from 1934 to 1937, won the 1938 PGA Seniors' Championship held there, and acted as an honorary starter at the Masters from 1963 to 1976. He was a member of the group of senior professionals which established the senior division of the PGA of America in 1937.\n\n\n== Personal life ==\nMcLeod died in Washington, D.C., at the age of 94. He was buried at the last club where he had worked as a professional, Columbia Country Club, in Chevy Chase, Maryland.\n\n\n== Professional wins (10) ==\n\n\n=== PGA Tour wins (4) ===\n1908 U.S. Open\n1920 North and South Open\n1921 St. Augustine Open\n1924 St. Petersburg Open\nMajors shown in bold.\nSource:\n\n\n=== Other wins (6) ===\n1905 Riverside Open\n1905 Western PGA Championship\n1907 Western PGA Championship\n1909 North and South Open\n1912 Shawnee Open\n1927 Maryland Open\n\n\n== Major championships ==\n\n\n=== Wins (1) ===\n\n1 Defeated Willie Smith in an 18-hole playoff – McLeod (77), Smith (83)\n\n\n=== Results timeline ===\n\nNYF = Tournament not yet founded\nNT = No tournament\nWD = Withdrew\nCUT = missed the half-way cut\nR64, R32, R16, QF, SF = Round in which player lost in PGA Championship match play\n\"T\" indicates a tie for a place\n\n\n== References ==\n\n\n== External links ==\nNorth Berwick Golfers profile"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_24",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Iain Todd rugby university Glasgow endowment Fred McLeod rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_24",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "University of Stirling:  W3C internet architect Kathleen Taylor, biologist at University of Oxford Arts and media Iain Banks, author Alan Bissett, writer Jonathan Clements, author"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_25",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"university\" rugby Scotland"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_25",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nIain Todd: Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union. Born in Clouston Street, Glasgow, Todd\nMacLeod: (footballer) (fl 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott\nApril 25: William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_26",
+          "toolName": "get_page",
+          "input": {
+            "title": "Iain Todd"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_26",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union.\n\n\n== Rugby Union career ==\n\n\n=== Amateur career ===\nBorn in Clouston Street, Glasgow, Todd went to Hillhead High School with his brother, David Todd. He played rugby for the school. On leaving school Todd went to the University of Glasgow to study medicine.\nWhile he was at Glasgow University he played for Glasgow University rugby union side.\nAfter leaving the university, Todd then played for Hillhead HSFP.\n\n\n=== International career ===\nWhile in Burma - now Myanmar - with the Royal Army Medical Corps he played for a Burma XV against the British Army.\n\n\n=== Referee career ===\nHe became Hillhead RFC 1st XV's touch judge. He often packed his Hillhead strip in his linesman kit bag - unbeknownst to his wife - in case the 'team was ever short'.\n\n\n=== Administrative career ===\nHe served on the Glasgow District committee from the mid-1970s.\nHe was elected to the SRU general committee in 1980.\nTodd became the 109th President of the Scottish Rugby Union. He served the standard one year from 1995 to 1996.\n\n\n== Military career ==\nTodd left Hillhead High School in 1942. He joined the Home Guard for the rest of the Second World War while studying at university. He then joined the Royal Army Medical Corps in 1948 and went to Myanmar as part of the Burma mission.\n\n\n== Medical career ==\nHe went to Glasgow University to study medicine in 1942. After returning from Myanmar he completed his residency at the Western Infirmary. He joined a General Practice in Govan with the former swimmer Dr Mirrlees Chassels.\n\n\n== Other interests ==\nHis grandfather had a farm in Campeltown, Kintyre and he developed a love of Argyll. \nHe joined the Loch Lomond Sailing Club, which is closer to Glasgow than to Campeltown. He became a long-time member and knew the loch intimately.\n\n\n== Tributes ==\nJohn Beattie recalled a time when Todd helped him through an injury:\n\nIt was my career-ending ligament injury. Iain’s daughter lived round the corner from our top-floor flat in Broomhill and Iain was very generous in wanting to help. I had a pin through my knee and kept yelping as he pushed me up the stairs grunting: ‘Just a few more steps…’ he was a truly lovely man and a huge part of my early life. Old fashioned and honest.\n\nAlan Hosie, former international referee and one time SRU President:\n\nIain was immensely popular within rugby, and never more so than when he was international tickets allocation secretary and convener; then, he was everybody’s friend!\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_27",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby student university Edinburgh"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_27",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "April 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_28",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"as of July 31, 2023\" endowment university endowment Wikipedia university rugby player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_28",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_29",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby player attended \"Daniel Stewart\" endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_29",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_30",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "rugby player Fred McLeod university attended Scottish rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_30",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "1944 Auckland Rugby League season: once more. Several former senior players were killed along with others who had played or been involved in Auckland rugby league. The City Rovers won the\nSt Aloysius' College, Glasgow: showcase | Scottish Rugby Union&quot;. www.scottishrugby.org. Retrieved 27 July 2017. National Schools Cup Final 2022/23 Match Reports, ScottishRugby.org, 7 December\nList of University of Edinburgh people: Scottish international rugby union player Alistair Potts, Commonwealth and British World Champion rower Mark Robertson, Scottish international rugby union\n2026 in New Zealand: 1952). Sir Tamati Reedy, rugby union player (East Coast, Thames Valley, New Zealand Maori), linguist and anthropologist (University of Waikato), public servant\nDeaths in January 2026: of Yad Sarah. Ian McCrae, 84, Scottish rugby union player (Gordonians, national team). Randy McMillan, 67, American football player (Baltimore/Indianapolis"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_31",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "University of Glasgow endowment July 31 2023 endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_31",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: London Endowment (as of July 31, 2023)&quot; (PDF). Imperial College London. 31 January 2024. Retrieved 16 June 2024. &quot;Cambridge University Endowment Fund:\nUniversity of Glasgow: engineering. Glasgow has the fifth-largest endowment of any university in the UK and the annual income of the institution for 2024–25 was £1.05 billion of which\nAncient universities of Scotland: Glasgow Aberdeen Edinburgh The ancient universities of Scotland (Scottish Gaelic: Oilthighean ann an Alba) are medieval and renaissance universities that\nCity St George's, University of London: surplus of £1.3 million in 2024/25. The group had a total endowment as of 31 July 2025 of £13.2 million, made up of £11.3 million in the university&#039;s endowment\nGlasgow Caledonian University: Glasgow Caledonian University (abbreviated GCU; Scottish Gaelic: Oilthigh Chailleannach Ghlaschu), is a public university in Glasgow, Scotland. It was"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_32",
+          "toolName": "get_page",
+          "input": {
+            "title": "University of Glasgow"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_32",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The University of Glasgow (abbreviated as Glas. in post-nominals; Scottish Gaelic: Oilthigh Ghlaschu) is a public research university in Glasgow, Scotland. Founded by papal bull in  1451 [O.S. 1450], it is the fourth-oldest university in the English-speaking world and one of Scotland's four ancient universities. Along with the universities of St Andrews, Aberdeen, and Edinburgh, the university was part of the Scottish Enlightenment during the 18th century. Glasgow is the  second largest university in Scotland by total enrolment and 8th-largest in the United Kingdom.\nIn common with universities of the pre-modern era, Glasgow originally educated students primarily from wealthy backgrounds; however, it became a pioneer in British higher education in the 19th century by also providing for the needs of students from the growing urban and commercial middle class. Glasgow University served all of these students by preparing them for professions: law, medicine, civil service, teaching, and the church. It also trained smaller but growing numbers for careers in science and engineering. \nGlasgow has the fifth-largest endowment of any university in the UK and the annual income of the institution for 2024–25 was £1.05 billion of which £241.1 million was from research grants and contracts, with an expenditure of £982.8 million. It is a member of Universitas 21, the Russell Group and the Guild of European Research-Intensive Universities.\nThe university was originally located in the city's High Street; since 1870, its main campus has been at Gilmorehill in the City's West End. Additionally, a number of university buildings are located elsewhere, such as the Veterinary School in Bearsden, and the Crichton Campus in Dumfries.\nThe alumni of the University of Glasgow include some of the major figures of modern history, including James Wilson, a signatory of the United States Declaration of Independence, 3 Prime Ministers of the United Kingdom (William Lamb, Henry Campbell-Bannerman and Bonar Law), 3 Scottish First Ministers (Humza Yousaf, Nicola Sturgeon and Donald Dewar), economist Adam Smith, philosopher Francis Hutcheson, engineer James Watt, physicist Lord Kelvin, surgeon Joseph Lister along with 4 Nobel Prize laureates (in total 8 Nobel Prize winners are affiliated with the university) and numerous Olympic gold medallists, including the current chancellor, Dame Katherine Grainger.\n\n\n== History ==\nThe University of Glasgow was founded in 1451 by a charter or papal bull from Pope Nicholas V, at the suggestion of King James II, giving Bishop William Turnbull, a graduate of the University of St Andrews, permission to add a university to the city's Cathedral. It is the second-oldest university in Scotland after St Andrews and the fourth-oldest in the English-speaking world. The universities of St Andrews, Glasgow, and Aberdeen were ecclesiastical foundations, while Edinburgh was a civic foundation. As one of the ancient universities of the United Kingdom, Glasgow is one of only eight institutions to award undergraduate master's degrees in certain disciplines.\nThe university has been without its original Bull since the mid-sixteenth century. In 1560, during the political unrest accompanying the Scottish Reformation, the then chancellor, Archbishop James Beaton, a supporter of the Marian cause, fled to France. He took with him, for safe-keeping, many of the archives and valuables of the cathedral and the university, including the Mace and the Bull. Although the Mace was sent back in 1590, the archives were not. Principal James Fall told the Parliamentary Commissioners of Visitation on 28 August 1690, that he had seen the Bull at the Scots College in Paris, together with the many charters granted to the university by the monarchs of Scotland from James II to Mary, Queen of Scots. The university enquired of these documents in 1738 but was informed by Thomas Innes and the superiors of the Scots College that the original records of the foundation of the university were not to be found. If they had not been lost by this time, they certainly went astray during the French Revolution when the Scots College was under threat. Its records and valuables were moved for safe-keeping out of the city of Paris. The Bull remains the authority by which the university awards degrees.\nTeaching at the university began in the Chapter House of Glasgow Cathedral, subsequently moving to nearby Rottenrow, in a building known as the \"Auld Pedagogy\". The university was given 13 acres (5.3 ha) of land belonging to the Black Friars (Dominicans) on High Street by Mary, Queen of Scots, in 1563. By the late 17th century its building centred on two courtyards surrounded by walled gardens, with a clock tower, which was one of the notable features of Glasgow's skyline—reaching 140 feet (43 m) in height—and a chapel adapted from the church of the former Dominican (Blackfriars) friary. Remnants of this Scottish Renaissance building, mainly parts of the main façade, were transferred to the Gilmorehill campus and renamed as the \"Pearce Lodge\", after Sir William Pearce, the shipbuilding magnate who funded its preservation. The Lion and Unicorn Staircase was also transferred from the old college site and is now attached to the Main Building.\nJohn Anderson, while professor of natural philosophy at the university, and with some opposition from his colleagues, pioneered vocational education for working men and women during the Industrial Revolution. To continue this work in his will, he founded Anderson's College, which was associated with the university before merging with other institutions to become the University of Strathclyde in 1964.\nIn 1973, Delphine Parrott became its first female professor, as Gardiner Professor of Immunology.\nIn October 2014, the university court voted for the university to become the first academic institution in Europe to divest from the fossil fuel industry. This followed a 12-month campaign led by the Glasgow University Climate Action Society and involved over 1,300 students.\n\n\n== Campus ==\n\nThe university is currently spread over a few campuses. The main one is the Gilmorehill campus, in Hillhead. As well as this there is the Garscube Estate in Bearsden, housing the Veterinary School, Observatory, ship model basin and much of the university's sports facilities, the Dental School in the city center, the section of Mental Health and Well Being at Gartnavel Royal Hospital on Great Western Road, the Teaching and Learning Centre at the Queen Elizabeth University Hospital and the Crichton Campus in Dumfries (operated jointly by the University of Glasgow, the University of the West of Scotland and the Open University).\nThe Imaging Centre of Excellence (ICE) was opened at the Queen Elizabeth University Hospital on 29 March 2017, including a Clinical Innovation Zone spanning 11,000 square feet (1,000 m2) of collaboration space for researchers and industry.\n\n\n=== High Street ===\n\nThe university's initial accommodation including Glasgow University Library was part of the complex of religious buildings in the precincts of Glasgow Cathedral. In 1460, the university received a grant of land from James, Lord Hamilton, on the east side of the High Street, immediately north of the Blackfriars Church, on which it had its home for the next four hundred years. In the mid-seventeenth century, the Hamilton Building was replaced with a very grand two-court building with a decorated west front facing the High Street, called the 'Nova Erectio', or New Building. This foundation is widely considered to have been one of the finest 17th-century buildings in Scotland. Decorated fragments from it, including a complete exterior stairway, were rescued and built into its 19th-century replacement. In Sir Walter Scott's best-selling 1817 novel Rob Roy, set at the time of the Jacobite rising of 1715, the lead character fights a duel in the New Building grounds before the contest is broken up by Rob Roy MacGregor.\n\nOver the following centuries, the university's size and scope continued to expand. In 1757 it built the Macfarlane Observatory and later Scotland's first public museum, the Hunterian. It was a center of the Scottish Enlightenment and subsequently of the Industrial Revolution, and its expansion in the High Street was constrained. The area around the university declined as well-off residents moved westwards with the expansion of the city and overcrowding of the immediate area by less well-off residents. It was this rapid slumming of the area that was a chief catalyst of the university's migration westward.\n\n\n=== Gilmorehill ===\n\nIn 1870, the university moved to a (then greenfield) site on Gilmorehill in the West End of the city, around three miles (five kilometres) west of its previous location, enclosed by a large meander of the River Kelvin. The original site on the High Street was sold to the City of Glasgow Union Railway and replaced by the college goods yard. The new-build campus was designed by Sir George Gilbert Scott in the Gothic revival style. The largest of these buildings echoed, on a far grander scale, the original High Street campus's twin-quadrangle layout, and may have been inspired by Ypres' late-medieval cloth hall; Gilmorehill, in turn, inspired the design of the Clocktower complex of buildings for the new University of Otago in New Zealand. In 1879, Gilbert Scott's son, Oldrid, completed this original vision by building an open undercroft forming two quadrangles, above which is his grand Bute Hall (used for examinations and graduation ceremonies), named after its donor, John Crichton-Stuart, 3rd Marquess of Bute. Oldrid also later added a spire to the building's signature gothic bell tower in 1887, bringing it to a total height of some 85 metres (278 ft). The local Bishopbriggs blond sandstone cladding and Gothic design of the building's exterior belie the modernity of its Victorian construction; Scott's building is structured upon what was then a cutting-edge riveted iron frame construction, supporting a lightweight wooden-beam roof. The building also forms the second-largest example of Gothic revival architecture in Britain, after the Palace of Westminster. An illustration of the Main Building previously featured on the reverse side of £100 notes issued by Clydesdale Bank.\nThe university's Hunterian Museum resides in the Main Building, and the related Hunterian Gallery is housed in buildings adjacent to the University Library. The latter includes \"The Mackintosh House\", a rebuilt terraced house designed by, and furnished after, architect Charles Rennie Mackintosh.\nEven these enlarged premises could not contain the expanding university, which quickly spread across much of Gilmorehill. The 1930s saw the construction of the award-winning round Reading Room (it is now a category-A listed building) and an aggressive program of house purchases, in which the university (fearing the surrounding district of Hillhead was running out of suitable building land) acquired several terraces of Victorian houses and joined them together internally. The departments of Psychology, Computing Science, and most of the Arts Faculty continue to be housed in these terraces.\n\nMore buildings were built to the west of the Main Building, developing the land between University Avenue and the River Kelvin with natural science buildings and the faculty of medicine. The medical school spread into neighboring Partick and joined with the Western Infirmary. At the eastern flank of the Main Building, the James Watt Engineering Building was completed in 1959. The growth and prosperity of the city, which had originally forced the university's relocation to Hillhead, again proved problematic when more real estate was required. The school of veterinary medicine, which was founded in 1862, moved to a new campus in the leafy surrounds of Garscube Estate, around two miles (3 km) west of the main campus, in 1954. The university later moved its sports ground and associated facilities to Garscube and also built student halls of residence in both Garscube and Maryhill.\nThe expected growth of tertiary education in the 1960s following publication of the Robbins Report led the university to build numerous modern buildings across Hillhead in a development zone, originally comprising mainly residential tenements, that had been designated on the north side of University Avenue in 1945. Several of these new buildings were in the brutalist style; the Mathematics Building at the west end of University Avenue (opened 1968, demolished 2017), the Rankine Building at the east end of University Avenue (opened 1970), the multipurpose Adam Smith Building (opened 1967) on the crest of the hill above University Gardens, and the new Queen Margaret Union building (opened 1968) on the University Gardens site previously occupied by the University Observatory. These were joined by others in various modernist styles; both the Library and Boyd Orr Building (opened 1968 and 1972 respectively) were configured as tower blocks, as was the Genetics Building at the very south end of the campus on Dumbarton Road (opened 1967, named for Guido Pontecorvo in 1994, demolished 2021), while the amber-brick Geology Building (opened 1980, named for John Walter Gregory in 1998, renamed for Silas Molema in 2021) was built to a low-rise design on the former site of eight terraced houses in Lilybank Gardens. \nTo further cater to the expanding student population, a new refectory—known as the Hub—was opened adjacent to the library in 1966, and the Glasgow University Union building at the eastern end of University Avenue was extended in 1965.\nIn October 2001 the century-old Bower Building (previously home to the university's botany department) was gutted by fire. The interior and roof of the building were largely destroyed, though the main façade remained intact. After a £10.8 million refit, the building re-opened in November 2004.\nThe Wolfson Medical School Building, with its award-winning glass-fronted atrium, opened in 2002, and in 2003, the St Andrews Building was opened, housing what is now the School of Education. It is sited a short walk from Gilmorehill, in the Woodlands area of the city on the site of the former Queens College, which had in turn been bought by Glasgow Caledonian University, from whom the university acquired the site. It replaced the St Andrews Campus in Bearsden. The university also procured the former Hillhead Congregational Church, converting it into a lecture theatre in 2005. The Sir Alwyn Williams building, designed by Reiach and Hall, was completed at Lilybank Terrace in 2007, housing the School of Computing Science.\nIn September 2016, in partnership with Glasgow City Council, Glasgow Life, and the National Library of Scotland, the transformed Kelvin Hall was brought into new public use including in Phase I the Hunterian Collections and Study Centre.\nThe Mathematics Building, on University Way adjacent to the Boyd Orr Building, was demolished in 2017 to make way for a new 'Learning Hub' intended to provide individual and group study spaces for more than 2,500 students, as well as a 500-seat lecture theatre. Built at a cost of £90.6 million, it opened in April 2021 and is named for James McCune Smith, the first African American to earn a degree in medicine and a University of Glasgow alumnus. A further investment of over £900 million is being made across the Gilmorehill campus, focused mainly on redeveloping the 5.7-hectare (14-acre) site between University Avenue and Dumbarton Road that was occupied by the Western Infirmary between 1874 and 2015.\n\n\n==== Chapel ====\n\nThe University Chapel was constructed as a memorial to the 755 sons of the university who had died in the First World War. Designed by Sir John Burnet, it was completed in 1929 and dedicated on 4 October. Tablets on the wall behind the Communion Table list the names of those who died, while other tablets besides the stalls record the 405 members of the university community who gave their lives in the Second World War. Most of the windows are the work of Douglas Strachan, although some have been added over the years, including those on the South Wall, created by Alan Younger.\nDaily services are held in the chapel during term-time, as well as seasonal events. Before Christmas, there is a Service of Nine Lessons and Carols on the last Sunday of term, and a Watchnight service on Christmas Eve. Graduates, students, members of staff, and the children of members of staff are entitled to be married in the chapel, which is also used for baptisms and funerals. Civil marriages and civil partnerships may be blessed in the chapel, although under UK law may not be performed there.\nThe current chaplain of the university is the Reverend Stuart MacQuarrie, and the university appoints honorary chaplains of other denominations.\n\n\n==== Library and archives ====\n\nGlasgow University Library is situated on Hillhead Street opposite the Main Building. The current 12-storey building was opened in 1968 and hosts approximately 2.5 million books and journals, and provides electronic resources, including over 50,000 electronic journals. It houses sections for periodicals, microfilms, special collections and rare materials.\nIn addition to the main library, subject libraries exist for Medicine, Chemistry, Dental Medicine, Veterinary Medicine, Education, Law, History of Art, and the faculty of Social Sciences, which are held in branch libraries around the campus. In 2007, a section to house the library's collection of historic photographs was opened, funded by the Wolfson Foundation.\nThe Archives of the University of Glasgow maintains the historical records of the university, created and accumulated since its foundation in 1451.\n\n\n=== Crichton campus, Dumfries ===\nThe university opened the Crichton campus in Dumfries, Dumfries and Galloway during the 1980s. It was designed to meet the needs for tertiary education in an area far from major cities and is operated jointly by the University of Glasgow, the University of the West of Scotland and the Open University. It offers a modular undergraduate curriculum, leading to one of a small number of liberal arts degrees, as well as providing the region's only access to postgraduate study.\n\n\n=== Non-teaching facilities ===\nAs well as the teaching campuses, the university has halls of residence in and around the north-west of the city, accommodating a total of approximately 3,500 students. These include the Murano Street Student Village in Maryhill; Wolfson halls on the Garscube Estate; Queen Margaret halls in Kelvinside; and Cairncross House and Kelvinhaugh Gate, in Yorkhill. In recent years, Dalrymple House and Horslethill halls in Dowanhill, Reith halls in North Kelvinside and the Maclay halls in Park Circus (near Kelvingrove Park), have closed and been sold, as the development value of such property increased.\nThe Stevenson Building on Gilmorehill opened in 1961 and provides students with the use of a fitness suite, squash courts, sauna, and six-lane, 25-metre swimming pool. The university also has a large sports complex on the Garscube Estate, besides their Wolfson Halls and Vet School. This is a new facility, replacing the previous Westerlands sports ground in the Anniesland area of the city. The university also has use of half of the East Boathouse situated at Glasgow Green on the River Clyde where Glasgow University Boat Club train.\n\n\n== Governance and administration ==\n\nIn common with the other ancient universities of Scotland the university's constitution is laid out in the Universities (Scotland) Acts. These Acts create a tripartite structure of bodies: the University Court (governing body), the Academic Senate (academic affairs), and the General Council (advisory). There is also a clear separation between governance and executive administration.\nThe university's constitution, academic regulations, and appointments are described in the u"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_33",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "University of Glasgow endowment 31 July 2023 £ endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_33",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: London Endowment (as of July 31, 2023)&quot; (PDF). Imperial College London. 31 January 2024. Retrieved 16 June 2024. &quot;Cambridge University Endowment Fund:\nUniversity of Glasgow: engineering. Glasgow has the fifth-largest endowment of any university in the UK and the annual income of the institution for 2024–25 was £1.05 billion of which\nAncient universities of Scotland: Glasgow Aberdeen Edinburgh The ancient universities of Scotland (Scottish Gaelic: Oilthighean ann an Alba) are medieval and renaissance universities that\nCity St George's, University of London: surplus of £1.3 million in 2024/25. The group had a total endowment as of 31 July 2025 of £13.2 million, made up of £11.3 million in the university&#039;s endowment\nGlasgow Caledonian University: Glasgow Caledonian University (abbreviated GCU; Scottish Gaelic: Oilthigh Chailleannach Ghlaschu), is a public university in Glasgow, Scotland. It was"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_34",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"University of Glasgow\" \"endowment\" \"2023\" million"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_34",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "University of Glasgow: The University of Glasgow (abbreviated as Glas. in post-nominals; Scottish Gaelic: Oilthigh Ghlaschu) is a public research university in Glasgow, Scotland\nList of universities in the United Kingdom by endowment: 2023&quot; (PDF). University of Glasgow. Retrieved 21 December 2023. &quot;Reports and Financial Statements for the year to 31 July 2022&quot; (PDF). University of Glasgow\nFossil fuel divestment: university&#039;s total endowment; about £18 million in such investments will be withdrawn over the decade-long phaseout. The University of Glasgow was the first\nAncient universities of Scotland: economics and finance, international relations, and management. The University of Glasgow was founded in 1451 by a charter or papal bull from Pope Nicholas\nRussell Group: the year to 31 July 2024&quot; (PDF). University of Glasgow. Retrieved 21 December 2024. &quot;Annual Report and Accounts 2023–24&quot; (PDF). Imperial College London"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_35",
+          "toolName": "get_page",
+          "input": {
+            "title": "List of universities in the United Kingdom by endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_35",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The following is a list of British universities ordered by their financial endowments, expressed in pounds sterling at fair value.\nBritish charity funds are made up of restricted reserves, which can only be used for specific purposes, and unrestricted reserves, which could be used for any activity within the charity's scope. The statement of recommended practice (SORP) defines endowments as specific funds with both restrictions over the endowments' income and intention from the donors to establish such endowments. In addition, these reserves must either be held indefinitely and cannot be converted into income without permission (known as permanent endowment funds) or could be converted into income at trustees' discretion (known as expendable endowment). Updated SORP guidance published in 2007 prohibits donations with no specific purpose by the donor (unrestricted) and \"with no requirement for maintenance of the original capital\" from being treated as endowment. While restrictive funds are not considered endowments under the SORP's accounting guidance, institutions sometimes use the term \"endowments\" broadly to refer to the sum of all funds that generate income for the institution's operation and activities. Figures listed below account for funds defined by the SORP as endowment.\nAll sources are official audited financial statements published in the respective fiscal years. Note that changes to the Financial Reporting Standards (FRS 102) and the SORP in 2015 mean endowments as of 2016 are not directly comparable in all cases with those for previous years.\n\n\n== Endowments over £1 billion ==\n\n\n== Endowments from £100 million to £1 billion ==\n\n\n== Endowments from £10 million to £100 million ==\n\n\n== Specialist Higher Education Institutions ==\n\n\n== Endowments per student greater than £10,000 ==\n\nNotes:\n† Excluding the endowments of the autonomous colleges \n\n\n== See also ==\nArmorial of UK universities\nList of universities in the United Kingdom\nList of UK universities by date of foundation\nList of universities in the United Kingdom by enrolment\nLists of institutions of higher education by endowment size\n\n\n== Notes ==\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_36",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"University of Glasgow\" \"Endowment\" \"31 July 2023\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_36",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: 2024. &quot;Reports and Financial Statements for the year to 31 July 2023&quot; (PDF). University of Glasgow. Retrieved 21 December 2023. &quot;Reports and Financial Statements\nUniversity of Leeds: university has financial endowments of £95.9 million (2025), placing it within the top twenty British universities by financial endowment. The university is\nUniversity of St Andrews: Scotland Thomas Chalmers; founder of and the first chancellor of the University of Glasgow William Turnbull; founder of the University of Edinburgh Robert\nYsgol Friars: physicist, and Cargill Professor of Applied Physics from 1920–34 at the University of Glasgow Mary Dilys Glynne - plant pathologist (her mother Dilys Glynne Jones\nBalliol College, Oxford: whose benefaction established exhibitions for students from the University of Glasgow to study at Balliol (the first exhibitioners were matriculated in"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_37",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby \"University of Glasgow\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_37",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Iain Todd: his brother, David Todd. He played rugby for the school. On leaving school Todd went to the University of Glasgow to study medicine. While he was at Glasgow"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_38",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Scottish rugby union Fred McLeod attended university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_38",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of University of Edinburgh people: Scottish international rugby union player Alistair Potts, Commonwealth and British World Champion rower Mark Robertson, Scottish international rugby union\nSt Aloysius' College, Glasgow: showcase | Scottish Rugby Union&quot;. www.scottishrugby.org. Retrieved 27 July 2017. National Schools Cup Final 2022/23 Match Reports, ScottishRugby.org, 7 December\nSOAS University of London: netball, rugby union and tennis. SOAS also participates in an annual North London Varsity tournament against London Metropolitan University. Some programs\nNational Union of Students (United Kingdom): The National Union of Students (NUS) is a confederation of student unions across the United Kingdom. Approximately 600 student unions are affiliated, accounting\n1944 Auckland Rugby League season: The 1944 Auckland Rugby League season was its 36th. The Auckland Rugby League allowed the Point Chevalier club to enter the first grade competition which"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_39",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "University of Glasgow 2022 2023 endowment £"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_39",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: list of British universities ordered by their financial endowments, expressed in pounds sterling at fair value. British charity funds are made up of restricted\nUniversity of Glasgow: engineering. Glasgow has the fifth-largest endowment of any university in the UK and the annual income of the institution for 2024–25 was £1.05 billion of which\nAncient universities of Scotland: Glasgow Aberdeen Edinburgh The ancient universities of Scotland (Scottish Gaelic: Oilthighean ann an Alba) are medieval and renaissance universities that\nGlasgow Caledonian University: Glasgow Caledonian University (abbreviated GCU; Scottish Gaelic: Oilthigh Chailleannach Ghlaschu), is a public university in Glasgow, Scotland. It was\nGlasgow: city&#039;s motto. In 1450, John Stewart, the first Lord Provost of Glasgow, left an endowment so that a &quot;St Mungo&#039;s Bell&quot; could be made and tolled throughout"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_40",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Reports and Financial Statements for the year to 31 July 2023\" \"endowment\" Glasgow"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_40",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of universities in the United Kingdom by endowment: Retrieved 21 December 2024. &quot;Reports and Financial Statements for the year to 31 July 2023&quot; (PDF). University of Glasgow. Retrieved 21 December 2023."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_41",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "site:wikipedia.org rugby player \"Fred McLeod\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_41",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Glasgow Warriors: The SRU management was in favour of districts and its Vice-president Fred McLeod, and Jim Telfer argued for the proposal. In favour of the clubs to be\nMichael Campbell: boys, Campbell dreamed of playing for the All Blacks, and began playing rugby union, but his mother vetoed his participation. While he was talented at"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_42",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "rugby university attended endowment \"July 31, 2023\" Fred"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_42",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Texas A&M University: Interim President of Texas A&amp;M University&quot;. Texas A&amp;M Today. July 30, 2023. Archived from the original on July 31, 2023. Retrieved July 30, 2023. &quot;Former"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Wikipedia identifies Fred McLeod as a Scottish rugby union player who attended Daniel Stewart’s College, but it does not say he attended a university. I couldn’t establish the university in the question or verify an endowment figure from the Wikipedia sources. **I can’t determine the endowment size from the available information.**\n\nANSWER: Not determinable from Wikipedia’s information about Fred McLeod."
+        }
+      ]
+    }
+  ]
+}

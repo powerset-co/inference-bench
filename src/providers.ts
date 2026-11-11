@@ -169,6 +169,7 @@ export const cells: Cell[] = [
   // https://platform.claude.com/docs/en/about-claude/pricing (cache writes at the 5-minute / 30-minute rate)
   { id: 'openai/gpt-6.1-sol', keyEnv: 'OPENAI_API_KEY', model: openai('gpt-6.1-sol'), price: usd([2, 0.1, 10, 2.5]) },
   { id: 'openai/gpt-6.1-terra', keyEnv: 'OPENAI_API_KEY', model: openai('gpt-6.1-terra'), price: usd([1, 0.05, 5, 1.25]) },
+  { id: 'openai/gpt-6-luna', keyEnv: 'OPENAI_API_KEY', model: openai('gpt-6-luna'), price: usd([0.1, 0.01, 0.5, 0.125]) },
   { id: 'anthropic/claude-sonnet-5.5', keyEnv: 'ANTHROPIC_API_KEY', model: anthropic('claude-sonnet-5-5'), price: usd([2, 0.1, 10, 2.5]) },
   { id: 'anthropic/claude-haiku-5.5', keyEnv: 'ANTHROPIC_API_KEY', model: anthropic('claude-haiku-5-5'), price: usd([0.1, 0.01, 0.5, 0.125]) },
 ];

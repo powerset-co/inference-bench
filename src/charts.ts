@@ -22,7 +22,7 @@ export type CellSummary = {
 
 const MODELS: Record<string, string> = {
   'glm-5.3': 'GLM-5.3', 'kimi-k3.1-pro': 'Kimi K3.1 Pro', 'deepseek-v4.1-flash': 'DeepSeek V4.1 Flash',
-  'gpt-6.1-sol': 'GPT-6.1 Sol', 'gpt-6.1-terra': 'GPT-6.1 Terra', 'claude-sonnet-5.5': 'Claude Sonnet 5.5', 'claude-haiku-5.5': 'Claude Haiku 5.5',
+  'gpt-6.1-sol': 'GPT-6.1 Sol', 'gpt-6.1-terra': 'GPT-6.1 Terra', 'gpt-6-luna': 'GPT-6 Luna', 'claude-sonnet-5.5': 'Claude Sonnet 5.5', 'claude-haiku-5.5': 'Claude Haiku 5.5',
 };
 const PROVIDERS: Record<string, { name: string; logo: string }> = {
   modal: { name: 'Modal', logo: 'modal' },

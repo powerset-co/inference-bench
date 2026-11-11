@@ -1,0 +1,210 @@
+{
+  "id": "frames-84",
+  "question": "Which event predates the other: the amalgamation of the Province of Betanzos with Mondonedo or the completion of a cathedral marking the destination of a prominent Spanish Catholic pilgrimage in the same province? Provide the year of the earlier event.",
+  "answer": "The completion of Santiago de Compostela Cathedral in 1211.",
+  "recordedWith": "openai/gpt-6-luna",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Which event predates the other: the amalgamation of the Province of Betanzos with Mondonedo or the completion of a cathedral marking the destination of a prominent Spanish Catholic pilgrimage in the same province? Provide the year of the earlier event."
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Province of Betanzos amalgamation Mondoñedo cathedral completion pilgrimage destination"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Betanzos Mondonedo province merged date cathedral Santiago de Compostela completion"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Province of Betanzos history Mondoñedo 1833"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Province of Mondoñedo: episcopus) Mondonedo City Council in the Province of Lugo. Diocese of Ferrol-Mondoñedo List of Districts and Parishes from Ferrol to Mondoñedo. (in English)\nProvince of A Coruña: the 1833 territorial division of Spain the entire Province of Betanzos together with half of the Mondoñedo were amalgamated into one single province with\nHistory of the territorial organization of Spain: Principality of Asturias of Oviedo, capital: Oviedo and Ponferrada. Zamora, with the Bishopric of Lugo, La Coruña and Betanzos, Orense, Mondoñedo, Santiago\nGalicia (Spain): division of Spain, Galicia was divided into seven administrative provinces: A Coruña Santiago Betanzos Mondoñedo Lugo Ourense Tui From 1833, the seven\nAndrade: Borough of Andrade. The two Galician regions of Ferrolterra and Terra Chá (i.e. the Province of Mondoñedo which disappeared as a province in the 1833 territorial"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Cathedral of Santiago de Compostela completed year construction completion"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Santiago de Compostela Cathedral: Archdiocese of Santiago de Compostela and is an integral component of the Santiago de Compostela World Heritage Site in Galicia, Spain. The cathedral is the\nBordeaux Cathedral: Bordeaux, France. It is the seat of the Archbishop of Bordeaux. In 1998, UNESCO designated the Routes of Santiago de Compostela in France as a World Heritage\nList of cathedrals in Spain: of elaborate Baroque architecture, exemplified by the redesigned façade of Santiago de Compostela Cathedral and the Cathedral-Basilica of Our Lady of\nBasilica of Saint-Sernin, Toulouse: Heritage Sites of the Routes of Santiago de Compostela in France. The abbey of Saint-Sernin was an ancient foundation. St. Sylvius, bishop of Toulouse, began\nMosque–Cathedral of Córdoba: of the Cathedral of Santiago de Compostela and reportedly ordered them to be melted down and turned into chandeliers for the mosque, although none of"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "input": {
+            "title": "Province of A Coruña"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The Province of A Coruña (Galician: provincia da Coruña [pɾoˈβinθjɐ ðɐ koˈɾuɲɐ]; Spanish: provincia de La Coruña [pɾoˈβinθja ðe la koˈɾuɲa] ; historical English: Corunna) is the northwesternmost province of Spain, and one of the four provinces which constitute the autonomous community of Galicia. This province is surrounded by the Atlantic Ocean to the west and north, Pontevedra Province to the south and Lugo Province to the east.\nIt has a population of 1,135,623 in an area of 7,953.90 square kilometres (3,071.02 sq mi) across its 93 municipalities.\n\n\n== History ==\nThe history of this province starts at the end of the Middle Ages during the reign of the Catholic Monarchs of Spain. During those years this province was far smaller than today.  This is because in the 1833 territorial division of Spain the entire Province of Betanzos together with half of the Mondoñedo were amalgamated into one single province with its capital city in A Coruña. \nSince 1833, the province has always been the one with the largest population and largest coast. Until the second half of the 20th century, this province was both the religious and cultural centre of the entire region. The University of Santiago de Compostela was the only university in North-western Spain until the arrival of democracy after the death of General Francisco Franco.\n\n\n== Municipalities ==\nThe province has 93 municipalities:\n\n\n== Demographics ==\n\nAs of 2025, the population is 1,135,623, of which 48.0% are male, and 52.0% are female. Minors make up 13.7% of the population, and seniors make up 26.3%.\n\n\n=== Immigration ===\n\nAs of 2025, immigrants make up 12.2% of the population. The 5 largest foreign countries of birth are Venezuela, Colombia, Cuba, Peru, and Argentina.\n\n\n== Main sights ==\nThe cathedral of Santiago de Compostela is the destination of the Way of St. James, a major historical pilgrimage route since the Middle Ages which still gathers thousands of pilgrims each year from all over the world.\n\n\n== Parks ==\nAtlantic Islands of Galicia National Park is the only national park in Galicia. It is shared between the provinces of A Coruña and Pontevedra.\nThe \"Fragas\" of the River Eume Natural Park extends itself throughout the Eume and Ferrol regions of Ferrolterra.\nThe Dunes of Corrubedo Natural Park (Parque Natural das Dunas de Corrubedo e lagoas de Carregal e Vixán) is a beach park at the very end of the Barbanza Peninsula.\n\n\n== Transport ==\n\n\n=== Airports and airfields ===\nAeroporto da Lavacolla in Santiago de Compostela\nAeroporto de Alvedro in the City of A Coruña\nHeliporto da Graña in the Naval Base of A Graña (Ferrolterra)\nHeliporto de Narón in Naron (Ferrolterra)\n\n\n=== Railway ===\nSpanish National Railway Network Linking every major city: Barqueiro, Ferrol, Betanzos, A Coruña and Santiago de Compostela.\nSpanish High Speed Railway Network (AVE) Linking most major cities of the province with Lisbon and Madrid is under construction.\n\n\n== Economy ==\n\n\n=== Ports ===\nA Coruña – Major Commercial Port – Rías Altas\nMalpica – Fishing Port – Costa da Morte\nCamariñas – Fishing Port – Costa da Morte\nFisterra – Fishing Port – Costa da Morte\nFerrol – Major Commercial Ports (also: Military) – Rias altas\nCariño – Fishing Port – Rias altas\nEspasante – Fishing Port – Rias altas\nCedeira – Fishing Port – Rias altas\n\n\n== Sport ==\nDeportivo de La Coruña Spanish Primera Federación team from the City of A Coruña.\nRacing Ferrol Spanish Segunda División team from the City of Ferrol.\nSD Compostela Spanish Segunda Federación team from the City of Santiago de Compostela.\nAtlético Arteixo Spanish Tercera Federación team from the Municipality of Arteixo.\nBergantiños FC Spanish Tercera Federación team from the Municipality of Carballo.\nSD Negreira Spanish Tercera Division team from the Municipality of Negreira.\nAutos Lobelle de Santiago FS Spanish División de Honor of Futsal team from the City of Santiago de Compostela.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "get_page",
+          "input": {
+            "title": "Santiago de Compostela Cathedral"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The Santiago de Compostela Archcathedral Basilica (Spanish and Galician: Catedral Basílica de Santiago de Compostela) is part of the Metropolitan Archdiocese of Santiago de Compostela and is an integral component of the Santiago de Compostela World Heritage Site in Galicia, Spain. The cathedral is the reputed burial place of Saint James the Great, one of the apostles of Jesus Christ. It is also among the remaining churches in the world built over the tomb of an apostle, the other ones being St Peter's Basilica in Vatican City, St Thomas Cathedral Basilica in Chennai, India, and Basilica of St. John in İzmir, Turkey.\nThe archcathedral basilica has historically been a place of Christian pilgrimage on the Way of St James since the Early Middle Ages and marks the traditional end of the pilgrimage route. The building is a Romanesque structure, with later Gothic and Baroque additions.\n\n\n== History ==\nAccording to legend, the tomb in Santiago was rediscovered in AD 814 by Pelagius the Hermit, after he witnessed strange lights in the night sky above the Libredon forest. Bishop Theodomirus of Iria recognized this as a miracle and informed king Alfonso II of Asturias and Galicia (791–842). The king ordered the construction of a chapel on the site. Legend has it that the king was the first pilgrim to this shrine. This was followed by the first church in AD 829 and then in AD 899 by a pre-Romanesque church, ordered by king Alfonso III of León, which caused the gradual development of this major place of pilgrimage.\nIn 997 the early church was reduced to ashes by Al-Mansur Ibn Abi Aamir (938–1002), army commander of the caliph of Córdoba. St James's tomb and relics were left undisturbed. The gates and the bells, carried by local Christian captives to Córdoba, were added to the Aljama Mosque. When Córdoba was taken by king Ferdinand III of Castile in 1236, these same gates and bells were then transported by Muslim captives to Toledo, to be inserted in the Cathedral of Saint Mary of Toledo.\nConstruction of the present cathedral began in 1075 under the reign of Alfonso VI of Castile (1040–1109) and the patronage of bishop Diego Peláez. It was built according to the same plan as the monastic brick church of Saint Sernin in Toulouse, probably the greatest Romanesque edifice in France. It was built mostly in granite. Construction was halted several times and, according to the Liber Sancti Iacobi, the last stone was laid in 1122. But by then, the construction of the cathedral was certainly not finished. The cathedral was consecrated in 1211 in the presence of king Alfonso IX of Leon.\nAccording to the Codex Calixtinus the architects were \"Bernard the elder, a wonderful master\", his assistants Robertus Galperinus and, later possibly, \"Esteban, master of the cathedral works\". In the last stage \"Bernard, the younger\" was finishing the building, while Galperinus was in charge of the coordination. He also constructed a monumental fountain in front of the north portal in 1122.\nThe city became an episcopal see in 1075 and the church its cathedral. Due to its growing importance as a place of pilgrimage, it was raised to an archiepiscopal see by Pope Callixtus II in 1120. A university was added in 1495.\nIt has been proposed that the peculiar lantern towers of several churches in the Duero valley (Zamora, Plasencia, Toro, Évora) were inspired by the Romanesque dome of Santiago, substituted by a Gothic one in the 15th century.\nThe cathedral was expanded and embellished with additions in the 16th, 17th and 18th centuries.\n\n\n== Exterior of the cathedral ==\n\nEach of the façades along with their adjoining squares constitute a large urban square. The Baroque façade of the Praza do Obradoiro square was completed by Fernando de Casas Novoa in 1740. Also in baroque style is the Acibecharía façade by Ferro Caaveiro and Fernández Sarela, later modified by Ventura Rodríguez. The Pratarías façade, built by the Master Esteban in 1103, and most importantly the Pórtico da Gloria, an early work of Romanesque sculpture, were completed by Master Mateo in 1188.\n\n\n=== Façade of the Obradoiro ===\n\nThe Obradoiro square in front of the façade alludes to the workshop (Galician: obradoiro) of stonemasons who worked on the square during the construction of the cathedral. In order to protect the Pórtico da Gloria from deterioration caused by weather, this façade and towers have had several reforms since the 16th century. In the 18th century it was decided to build the current Baroque façade, designed by Fernando de Casas Novoa. It has large glazed windows that illuminate the ancient Romanesque façade, located between the towers of the Bells and of the Ratchet. In the middle of the central body is St. James and one level below his two disciples Athanasius and Theodore, all dressed as pilgrims. In between, the urn (representing the found tomb) and the star (representing the lights Hermit Pelagius saw) between angels and clouds. The tower on the right depicts Mary Salome, mother of St. James, and the tower on the left depicts his father Zebedee. The balustrade on the left side depicts St. Susanna and St. John and the one on the right depicts St. Barbara and James the Less.\nThe Maximilian Staircase allows entrance to the façade. The stair was made in the 17th century by Ginés Martínez and it is of Renaissance style inspired by Giacomo Vignola of Palazzo Farnese. It is diamond-shaped with two ramps that surround the entrance to the old 12th century Romanesque crypt of the Master Mateo, popularly called the \"Old Cathedral\". According to Manuel Gago Mariño, the sculptures at the base of the Maximilian Staircase of the cathedral, built by Maximilian of Austria are also related to the Battle of Clavijo.\nBetween the existing plane of the façade of the Obradoiro and the old Romanesque portal (Pórtico da Gloria) there is a covered narthex.\nThis façade has become a symbol of the cathedral and the city of Santiago de Compostela. As such, it is the engraving on the back of the Spanish euro coins of 1, 2 and 5 cents.\n\n\n=== South façade or das Pratarías ===\n\nThe façade of the Silverware (Pratarías in Galician) is the southern façade of the transept of the cathedral of Santiago de Compostela; it is the only Romanesque façade that is preserved in the cathedral. It was built between 1103 and 1117 and elements from other parts of the cathedral have been added in subsequent years. The square is bound by the cathedral and cloister on two sides. Next to the cathedral is the Casa do Cabido.\nIt has two entrance doors in degradation with archivolts and historical tympanums. The archivolts are attached over eleven columns, three are of white marble (middle and corners) and the rest of granite. In the center are the figures of twelve prophets and the Apostles on the sideline. On the tympanums is a large frieze separated from the upper body by a strip supported by grotesque corbels; on this floor are two windows decorated with Romanesque archivolts.\nIn the central frieze is Christ, with various characters and scenes. On the right six figures belong to the Stone choir of Master Mateo that were placed in the late 19th century. The original provision of the iconographic elements was invalidated since in the 18th century numerous images were introduced recovered from the dismantled Acibecharía façade. A central medallion shows the Eternal Father (or Transfiguration) with open hands and on the top surface there are four angels with trumpets heralding the Final Judgment.\nIn the tympanum of the left door is Christ tempted by a group of demons. To the right is a half-dressed woman with a skull in her hands, which could be Eve or the adulterous woman. This figure is not praying on her knees but is sitting on two lions. The jambs are Saint Andrew and Moses. In the left abutment, the Biblical King David seated on his throne with his legs crossed, translucent through the thin fabric of his clothes, and playing what appears to be a rebec, personifies the triumph over evil and is an outstanding Romanesque work, sculpted by Master Esteban. The creation of Adam and Christ's blessing is also shown. Many of these figures come from the Romanesque façade of the north or do Paraíso (current façade of the Acibecharía) and were placed on this façade in the 18th century.\n\nIn the tympanum of the right door there are several scenes from the Passion of Christ and the Adoration of the Magi. In one of the jambs is the inscription commemorating the laying of the stone: Registration follows the Roman calendar, according to the computation of the Spanish era, corresponding to July 11, 1078. An image, unidentified, of a fox eating a rabbit and, against this, a badly dressed woman with an animal in her lap. Supported on the wall of the tower Berenguela appear other images representing the creation of Eve, Christ on a throne, and the Binding of Isaac.\n\n\n=== North façade or da Acibecharía ===\n\nThe façade \"da Acibecharía\" (Galician name derived from the jet gemstone) is in the Praza da Inmaculada or Acibecharía, draining the last section of urban roads: French, Primitive, Northern and English through the old gate Franxígena or Paradise door. The Romanesque portal was built in 1122 by Bernardo, treasurer of the temple. This portal was demolished after suffering a fire in 1758; some sculptural pieces that were saved were placed on the façade das Pratarías. The new façade was designed in Baroque style by Lucas Ferro Caaveiro and finished by Domingo Lois Monteagudo and Clemente Fernández Sarela in the neoclassical style in 1769, although it retained some traces of the baroque.\nAt the top of the façade is an 18th-century statue of St. James, with two kings in prayer at his feet: Alfonso III of Asturias and Ordoño II of León. In the centre is the statue of Faith.\n\n\n=== East façade or da Quintana ===\n\nThe façade of the cathedral that overlooks the Plaza de la Quintana has two gates: the Porta Real (royal gate) and the Porta Santa (holy gate). The construction of the Porta Real, baroque, was begun under the direction of José de Vega y Verdugo and by José de la Peña de Toro in 1666, and was completed by Domingo de Andrade in 1700, who built some of the columns that span two floors of windows, a balustrade with large pinnacles, and an aedicula with an equestrian statue of Saint James (now disappeared), well adorned with decorative fruit clusters and large-scale military trophies. The kings of Spain entered the cathedral through this door, hence its name, and the royal coat of arms on its lintel.\nThe holy door (Porta Santa) or Door of Forgiveness (Porta do Perdón) is the closest to the steps. It is usually closed with a fence and opened only in a Jacobean holy year (years when Saint James' Day, 25 July, falls on a Sunday). It was one of the seven lesser gates and was dedicated to St. Pelagius (for whom is named a convent just opposite). On this door niches contain the image of James, with his disciples Athanasius and Theodore at his side. On the bottom and sides of the door were placed twenty-four figures of prophets and apostles (including St. James) coming from the old stone choir of Master Mateo. Inside this door through a small courtyard is the true Holy Door, which enters into the ambulatory of the apse of the church.\n\n\n=== Bell Towers ===\n\nThe early towers in the main façade of the cathedral were Romanesque (current façade of the Obradoiro). They are called the Torre das Campás, which is situated on the side of the Epistle (right) and Torre da Carraca, to the side of the Gospel (left). The two have a height of between 75 and 80 metres.\nThe first part of the tower was built in the 12th century, but in the 15th century several modifications were made and King Louis XI of France donated in 1483 the two largest of the thirteen bells.\nDue to a tilt that was detected in its structure between the 16th and 17th centuries, the towers had to be reinforced with buttresses, between 1667 and 1670. The towers housing the bells were made by José de la Peña de Toro (1614–1676) in a baroque style, and completed by Domingo de Andrade. The architecture of the towers has a great effect in perspective with its vertical lines and the sequencing of its floors.\n\n\n=== North Tower or da Carraca ===\nIt is located to the left of the façade del Obradoiro, and was built – like its partner – on the opposite side of an earlier tower of the Romanesque period. It was designed by Fernando de Casas Novoa in 1738, imitating the bell towers by Peña de Toro and Domingo de Andrade in the 17th century: baroque decorations adorned all kinds of ornamentation that provided a unifying architecture across the façade.\n\n\n=== Clock Tower, Torre da Trindade or Berenguela ===\n\nThe Clock Tower, also called Torre da Trindade or, Berenguela, is at the intersection of the Pratarías square and the Quintana Square. Traditionally, construction was thought to begin in 1316, at the request of Archbishop Rodrigo del Padrón as a defence tower. After his death his successor, Archbishop Bérenger de Landore, continued work on it, though these dates are questioned by some authors. When he became main master of the cathedral, Domingo de Andrade continued with its construction and between 1676 and 1680 raised it two floors higher; the use of various structures achieved a harmonious and ornamental design, with a pyramid-shaped crown and a lantern as a final element, with four light bulbs permanently lit. It rises to 75 m (246 ft).\nIn 1833, a clock was placed on each side of the tower by Andrés Antelo, commissioned by the Archbishop Rafael de Vélez. As part of its mechanism it has two bells, one, at the hour, called Berenguela, and a smaller one marking the quarter hours. These two were cast in 1729 by Güemes Sampedro. Berenguela has a diameter of 255 cm (100 in) and a height of 215 cm (85 in), weighing approximately 9,600 kg (21,200 lb), and the smaller weighs 1,839 kg (4,054 lb) with a diameter of 147 cm (58 in) and a height of 150 cm (59 in). Both original bells cracked, forcing their replacement. The current replicas were cast in Asten (Netherlands) by the Eijsbouts house in 1989 and were placed in the cathedral in February 1990.\nDuring a Jacobean Holy Year, pilgrims may enter the cathedral through the holy door (Porta Santa) to gain a plenary indulgence. During a holy year, the lantern of the Berenguela Tower is lit throughout the year. otherwise it stays unlit. The light acts as a lighthouse to guide pilgrims to the cathedral during the holy years.\n\n\n== Interior ==\n\nThe cathedral is 97 m (318 ft) long and 22 m (72 ft) high. It preserves its original, barrel-vaulted, cruciform, Romanesque interior. It consists of a nave, two lateral aisles, a wide transept, and a choir with radiating chapels. Compared with many other important churches, the interior of this cathedral gives a first impression of austerity until one enters further and sees the magnificent organ and the exuberance of the choir. It is the largest Romanesque church in Spain and one of the largest in Europe.\n\n\n=== Portico of Glory ===\n\nThe Portico of Glory (\"Pórtico da Gloria\" in Galician) of the Cathedral of Santiago de Compostela is a Romanesque portico by Master Mateo and his workshop commissioned by King Ferdinand II of León. To commemorate its completion in 1188, the date was carved on a stone and set in the cathedral, and the lintels were placed on the portico. Finalising the complete three-piece set took until 1211, when the temple was consecrated in the presence of King Alfonso IX of León.\nThe portico has three round arches that correspond to the three naves of the church, supported by thick piers with pilasters. The central arch, twice as wide as the other two, has a tympanum and is divided by a central column—a mullion—containing a depiction of Saint James. Vertically, the lower part is formed by the bases of the columns, decorated with fantastic animals, the middle portion consists of columns adorned with statues of the Apostles, and the upper part supports the base of the arches crowning the three doors. The sculpture is intended to serve as an iconographic representation of various symbols derived from the Book of Revelation and books of the Old Testament.\n\n\n==== Tympanum ====\n\nThe arrangement of the tympanum is based on the description of Christ that John the Evangelist makes in Revelation (Chapter 1 v 1 to 18). In the centre, the Pantocrator is shown, with the image of Christ in Majesty, displaying in his hands and feet the wounds of crucifixion. Surrounding Christ is the tetramorph with the figures of the four Evangelists with their attributes: left, top St. John and the eagle and below St. Luke with the ox; on the right above, St. Matthew on the hood of the tax collector and below St. Mark and the lion.\nOn both sides of the evangelists, behind Mark and Luke, there are four angels on each side with the instruments of the Passion of Christ. Some are, without touching them directly, the cross and crown of thorns (left) and lance and four nails (right), another the column in which he was whipped and the jar through which Pontius Pilate proclaimed his innocence. Above the heads of these angels, two large groups of souls of the blessed, forty in all. In the archivolt of the central tympanum are seated the Elders of the Apocalypse, each holding a musical instrument, as if preparing a concert in honor of God.\n\n\n==== Mullion ====\n\nIn the mullion, the figure of Saint James is seated with a pilgrim's staff, as a patron of the basilica. St. James appears with a scroll which contains written Misit me Dominus (the Lord sent me). The column just above his head with a capital which represents the temptations of Christ. On three of its sides, facing the inside of the temple, two kneeling angels pray. At the foot of the saint there is another capital with the figures of the Holy Trinity. Under the Apostle there is a representation of the tree of Jesse, the name given to the family tree of Jesus Christ from Jesse, father of King David; this is the first time that this subject is represented in religious iconography in the Iberian Peninsula. The column rests on a base where there is a figure with beard to his chest (perhaps an image of Noah) and two lions. At the foot of the central column at the top inside, looking towards the main altar of the cathedral, there is the kneeling figure of the Master Mateo himself, holding a sign on which is written Architectus. This image is popularly known as Santo dos Croques from the ancient tradition of students hitting their heads against the figure for wisdom, a tradition that was adopted later by pilgrims, although steps are being taken to limit access, to stem deterioration from which the work has suffered.\n\n\n==== Jambs ====\nIn the columns of the central door and two side doors, the apostles are represented, as well as prophets and other figures with their iconographic attributes. All are topped with its own capital which represents different animals and human heads with leaf motifs. The names of all the figures are on the books or scrolls held in their hands.\nThe four pillars of the portico are based on strong foundations which represent various groups of animals and human heads with beards. For some historians, these figures are images of demons and symbolize the weight of glory (the portico in this case) crushing sin. Other sources give an apocalyptic interpretation, with wars, famine and death (represented by the beasts) with situations that can only be saved by human intelligence (the heads of older men).\n\n\n==== Side doors ====\n\nThe arch of the right door represents the Last Judgment. The double archivolt is divided into two equal parts by two heads. Some authors identify these heads with the figures of archangel Michael and Christ. For others, they are Christ-Judge and an angel or may indicate God the Father and God the Son. To the right of these heads, Hell is represented with figures of monsters (dem"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Cathedral of Santiago construction completion 1211 completion cathedral"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Santiago de Compostela Cathedral: Archdiocese of Santiago de Compostela and is an integral component of the Santiago de Compostela World Heritage Site in Galicia, Spain. The cathedral is the\nList of largest church buildings: substantially modified for use as a church; for example, the Mosque–Cathedral of Córdoba. The building must still be standing. The building&#039;s internal\nList of cathedrals in Spain: of elaborate Baroque architecture, exemplified by the redesigned façade of Santiago de Compostela Cathedral and the Cathedral-Basilica of Our Lady of\nGothic architecture: by a series of new cathedrals of unprecedented height and size. These were Reims Cathedral (begun 1211), where coronations of the kings of France took\nPortico of Glory: The Portico of Glory (Galician: Pórtico da Gloria) of Santiago de Compostela Cathedral is a Romanesque portico and the cathedral&#039;s main gate created by"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The Province of A Coruña page dates the amalgamation of Betanzos and part of Mondoñedo to **1833**. The cathedral page says construction was still unfinished when the last stone was laid in **1122**, and that the cathedral was consecrated in **1211**. So the cathedral event came first. **ANSWER: 1122**"
+        }
+      ]
+    }
+  ]
+}

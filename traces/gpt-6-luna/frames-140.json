@@ -1,0 +1,291 @@
+{
+  "id": "frames-140",
+  "question": "What is the birth date of the person picked right after Lee Vaughn in the 1997 NFL draft?",
+  "answer": "August 24, 1974",
+  "recordedWith": "openai/gpt-6-luna",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the birth date of the person picked right after Lee Vaughn in the 1997 NFL draft?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "1997 NFL draft Lee Vaughn picked after Lee Vaughn"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of College GameDay (football TV program) locations: Dwayne Haskins head Lee Corso wore at the NFL Draft?&quot;. Cleveland.com. Retrieved November 8, 2022. Papke, Grey (April 26, 2019). &quot;Lee Corso dons a giant\nCollege GameDay (football TV program): correctly picked the Ohio State Buckeyes over the Penn State Nittany Lions. In 2018, Corso made his first NFL headgear pick when, as a guest on Sunday NFL Countdown\nBuffalo Bills: of the American Football League (AFL), the team joined the NFL in 1970 after the AFL–NFL merger. The team&#039;s name is taken from an All-America Football\nMinnesota Vikings: in the 1960 NFL Championship Game. As a new franchise, the Vikings had the first overall selection in the 1961 NFL draft, and they picked running back\nWake Forest Demon Deacons football: Conference (ACC) Player of the Year, yet went unselected in both the AFL and NFL drafts. Mackovic led the Demon Deacons with 1,340 passing yards while completing"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Lee Vaughn 1997 NFL Draft"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "1997 NFL draft: 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL\n1998 NFL draft: 1998 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual\n1994 NFL draft: 1994 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual\nLee Vaughn: Lee Vaughn (born November 27, 1974) is an American former football cornerback in the National Football League (NFL) for the Dallas Cowboys. He also was\nList of Alabama Crimson Tide in the NFL draft: one picks, Harry Gilmer in the 1948 NFL draft, Joe Namath in the 1965 AFL draft and Bryce Young in the 2023 NFL draft. The University of Alabama has had"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "input": {
+            "title": "1997 NFL draft"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual Player Selection Meeting. The draft was held April 19–20, 1997, at the Paramount Theatre at Madison Square Garden in New York City, New York. No teams chose to claim any players in the supplemental draft that year.\nThis draft was notable for its high-profile offensive linemen. The first overall selection was Orlando Pace, who appeared in seven consecutive Pro Bowls from 2000 to 2006 and was inducted to the Hall of Fame in 2016. Tarik Glenn was selected 19th overall and was also named to three Pro Bowls. Walter Jones, who made nine Pro Bowls (including eight consecutive from 2001 to 2008), was a seven time All-Pro and was inducted to the Hall of Fame in 2014, was selected sixth overall. Others include Chris Naeole, Dan Neil, Ryan Tucker, Jeff Mitchell, Mike Flynn and Joe Andruzzi.\nThe 1997 draft is also known for its running backs. Warrick Dunn, Corey Dillon and Tiki Barber each rushed for over 10,000 yards in their careers, and Antowain Smith and Duce Staley all enjoyed productive seasons in the NFL. This draft is also well known for its undrafted Pro Bowl players, including Jake Delhomme, Priest Holmes and Pat Williams.\n\n\n== Player selections ==\n\n\n== Notable undrafted players ==\n\n\n== Hall of Famers ==\nWalter Jones, offensive tackle from Florida State University taken 1st round 6th overall by the Seattle Seahawks.\ninducted: Pro Football Hall of Fame class of 2014.\nOrlando Pace, offensive tackle from Ohio State University taken 1st round 1st overall by the St. Louis Rams.\ninducted: Pro Football Hall of Fame class of 2016.\nJason Taylor, defensive end from University of Akron taken 3rd round 73rd overall by the Miami Dolphins.\ninducted: Pro Football Hall of Fame class of 2017.\nTony Gonzalez, tight end from University of California taken 1st round 13th overall by the Kansas City Chiefs.\ninducted: Pro Football Hall of Fame class of 2019.\nRonde Barber, cornerback from University of Virginia taken 3rd round 66th overall by the Tampa Bay Buccaneers.\ninducted: Pro Football Hall of Fame class of 2023.\n\n\n== Trades ==\nIn the explanations below, (D) denotes trades that took place during the 1997 draft, while (PD) indicates trades completed pre-draft.\nRound 1\n\nRound 2\n\nRound 3\n\nRound 4\n\nRound 5\n\nRound 6\n\nRound 7\n\n\n== References ==\n\n\n== External links ==\nNFL.com – 1997 Draft\ndatabaseFootball.com – 1997 Draft\nPro Football Hall of Fame\n1997 NFL Draft Listing at Pro Football Reference"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "1997 NFL draft Lee Vaughn selection round pick"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "1997 NFL draft: 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL\n1998 NFL draft: 1998 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual\n1994 NFL draft: 1994 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual\nWashington Commanders draft history: selection in the supplemental draft, the Redskins forfeited its sixth round pick in the 2010 NFL draft. For their selection in the supplemental draft\nList of Alabama Crimson Tide in the NFL draft: League (NFL) since the league began holding drafts in 1936. This includes 86 players taken in the first round and three overall number one picks, Harry"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Lee Vaughn NFL draft 1997 pick number next player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of Alabama Crimson Tide in the NFL draft: three overall number one picks, Harry Gilmer in the 1948 NFL draft, Joe Namath in the 1965 AFL draft and Bryce Young in the 2023 NFL draft. The University\nSteve Walsh (American football): second overall pick in the NFL supplemental draft, even though they had selected Troy Aikman number one overall in the 1989 NFL draft and had to surrender\nList of College GameDay (football TV program) locations:  &quot;2018 NFL Draft to include college-themed broadcast&quot;. SBNation.com. Retrieved March 21, 2018. Holleran, Andrew. &quot;Lee Corso&#039;s &quot;Headgear Pick&quot; At The\n2020 NFL season: 20, 2020. Retrieved May 23, 2020. Bell, Jarrett. &quot;NFL approves plan to reward teams with draft picks for developing minority coaches, GMs&quot;. USA TODAY.\nList of Kansas State Wildcats in the NFL draft: NFL in 1970, the &quot;Common Draft&quot; simply became the NFL Draft. Because four KSU players were selected in both the NFL and AFL drafts, the total number of"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "1997 NFL draft \"Lee Vaughn\" \"round\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Lee Vaughn: Lee Vaughn (born November 27, 1974) is an American former football cornerback in the National Football League (NFL) for the Dallas Cowboys. He also was\n1997 Dallas Cowboys season: The 1997 Dallas Cowboys season was the franchise&#039;s 38th season in the National Football League (NFL) and was its fourth under head coach Barry Switzer\n1997 NFL draft: 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL\nList of Wyoming Cowboys in the NFL draft: The Wyoming Cowboys have had 85 players drafted to the NFL since the first draft in 1936. Of those 84 players, 5 have been selected to a Pro Bowl, and\n1999 Amsterdam Admirals season: Amsterdam Admirals season was the fifth season for the franchise in the NFL Europe League (NFLEL). The team was led by head coach Al Luginbill in his"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "get_page",
+          "input": {
+            "title": "Lee Vaughn"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Lee Vaughn (born November 27, 1974) is an American former football cornerback in the National Football League (NFL) for the Dallas Cowboys. He also was a member of the BC Lions in the Canadian Football League (CFL). He played college football at the University of Wyoming.\n\n\n== Early life ==\nVaughn attended East High School in Cheyenne, Wyoming, where he practiced football, basketball and track. As a senior, he received All-state honors at cornerback and return specialist. He also was named the Class 4A Back of the Year.\nIn track as a senior, he broke the state records in the 100 metres, 200 metres and long jump (originally set in 1963). He also received the Milward Simpson award, given annually to the state's outstanding prep athlete.\n\n\n== College career ==\nVaughn accepted a football scholarship from the University of Wyoming. As a freshman, he was a backup player, making 10 tackles. As a sophomore, he started 11 games at free safety, tallying 65 tackles, one interception and 3 pass deflections. He also contributed to the team winning the WAC title with an 8–4 record.\nAs a junior, he was moved to the starting right cornerback position, registering 70 tackles (3 for loss), 3 interceptions, 14 pass deflections, one sack and one quarterback pressure.\nAs a senior, he registered 75 tackles (51 solo), one interception, 10 pass deflections and 2 fumble recoveries. He contributed to the team achieving a 10–1 regular season record, the WAC's Pacific title and a 22 ranking in the AP Poll. He finished his college career with 220 tackles (4 for loss), 5 interceptions and 27 pass deflections.\n\n\n== Professional career ==\n\n\n=== Dallas Cowboys ===\nVaughn was selected by the Dallas Cowboys in the sixth round (187th overall) of the 1997 NFL draft. On July 23, he tore the anterior cruciate ligament in his right knee and was placed on the injured reserve list on August 14. He was waived on August 24, 1998.\n\n\n=== Amsterdam Admirals (NFLEL) ===\nVaughn was selected by the Amsterdam Admirals in the 19th round (111th overall) of the 1999 NFL Europe Draft. He was released on March 29.\n\n\n=== Grand Rapids Rampage (AFL) ===\nOn July 3, 2001, he was signed by the Grand Rapids Rampage of the Arena Football League. He was released on July 6.\n\n\n=== BC Lions (CFL) ===\nOn May 24, 2001, he was signed by the BC Lions of the Canadian Football League. He posted 38 defensive tackles, 2 special teams tackles, one interception and 2 fumble recoveries. He was released on October 1.\n\n\n=== Wichita Stealth (AF2) ===\nIn 2003, he was signed by the Wichita Stealth of the AF2 League. In June, he suffered a torn anterior cruciate ligament and was placed on the injured reserve list.\n\n\n== References ==\n\n\n== External links ==\nLee Vaughn Stats"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "1997 NFL draft 188th overall sixth round player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "1997 NFL draft: 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL\n2022 NFL draft: traded a sixth-round selection (181st overall) to Philadelphia in exchange for a sixth- and seventh-round selection (188th and 237th overall). No. 183:\n1999 NFL draft: 1999 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL Annual\nTanner McKee: Philadelphia Eagles in the sixth round, 188th overall, of the 2023 NFL draft. After not playing as a rookie, he made his NFL debut in Week 17 of the 2024\nList of Minnesota Vikings first-round draft picks: selection (10th overall) and a sixth-round selection (203rd overall). The Vikings traded second- and sixth-round selections (42nd and 188th overall), and a 2025"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"188th overall\" \"1997 NFL draft\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Tony McCombs: of the 1997 NFL draft. He played for the Arizona Cardinals from 1997 to 1998. &quot;Transactions&quot;. NFL.com. Retrieved June 17, 2024. &quot;1997 NFL Draft Listing&quot;\n1997 NFL draft: The 1997 NFL draft was the procedure by which National Football League teams selected amateur college football players. It is officially known as the NFL"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_9",
+          "toolName": "get_page",
+          "input": {
+            "title": "Tony McCombs"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_9",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Tony McCombs (born August 24, 1974) is an American former professional football player who was a linebacker in the National Football League (NFL). He played college football for the Eastern Kentucky Colonels and was selected in the sixth round of the 1997 NFL draft. He played for the Arizona Cardinals from 1997 to 1998.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Lee Vaughn was selected 187th overall, and Tony McCombs was picked immediately after him at 188th. McCombs’s birth date is August 24, 1974.\n\nANSWER: August 24, 1974"
+        }
+      ]
+    }
+  ]
+}
