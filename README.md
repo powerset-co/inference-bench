@@ -22,11 +22,11 @@ providers, not model intelligence.
 ## Results
 
 <!-- results:start -->
-![time-and-cost](results/charts/time-and-cost.svg)
+<img src="results/charts/time-and-cost.svg" alt="time-and-cost" width="100%">
 
-![latency](results/charts/latency.svg)
+<img src="results/charts/latency.svg" alt="latency" width="100%">
 
-![caching](results/charts/caching.svg)
+<img src="results/charts/caching.svg" alt="caching" width="100%">
 
 <sub>Last 30 days of runs: 2026-11-09 to 2026-11-11. Data: [summary](results/summary.csv), [raw results](results/).</sub>
 <!-- results:end -->
