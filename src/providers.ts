@@ -2,10 +2,14 @@
 // list price. A cell runs only when its API key env var is set.
 //
 // To add a provider: create a client below, then add one line per model to `cells`.
+//
+// A private copy of this repo can add providers without editing this file, in src/providers.local.ts
+// (gitignored here). See "Local providers" below.
 import { createAnthropic } from '@ai-sdk/anthropic';
 import { createOpenAI } from '@ai-sdk/openai';
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 import type { LanguageModel } from 'ai';
+import { existsSync } from 'node:fs';
 
 /** List price in USD per 1M tokens. `cacheWrite` only for providers that charge extra to fill the cache. */
 export type Price = { input: number; cached: number; output: number; cacheWrite?: number };
@@ -125,6 +129,29 @@ const sailCells: Cell[] = SAIL_MODELS.flatMap((m) => [
   { id: `sail-flex/${m.name}`, keyEnv: 'SAIL_API_KEY', model: sailFlex(reasoningFor(m.name)).responses(m.id), price: usd(m.flex), stream: false },
 ]);
 
+// --- Local providers ------------------------------------------------------------------------------
+// src/providers.local.ts, if present, default-exports a `LocalProviders` function returning extra cells and
+// their display names for the charts, e.g.
+//
+//   import type { LocalProviders } from './providers.ts';
+//   export default (({ openAICompatible, usd }) => {
+//     const acme = openAICompatible('acme', 'https://api.acme.example/v1', 'ACME_API_KEY');
+//     return {
+//       cells: [{ id: 'acme/glm-5.3', keyEnv: 'ACME_API_KEY', model: acme('glm-5.3'), price: usd([1, 0.1, 4]) }],
+//       names: { acme: { name: 'Acme', logo: 'acme' } }, // logo: assets/logos/acme.svg
+//     };
+//   }) satisfies LocalProviders;
+export type LocalProviders = (helpers: { openAICompatible: typeof openAICompatible; usd: typeof usd }) => {
+  cells: Cell[];
+  names: Record<string, { name: string; logo: string }>;
+};
+const LOCAL = new URL('./providers.local.ts', import.meta.url);
+const local: ReturnType<LocalProviders> = existsSync(LOCAL)
+  ? ((await import(LOCAL.href)).default as LocalProviders)({ openAICompatible, usd })
+  : { cells: [], names: {} };
+/** Display names and logos for the local providers' cells, keyed by the cell id's provider part. */
+export const localNames = local.names;
+
 export const cells: Cell[] = [
   ...sailCells,
 
@@ -172,4 +199,6 @@ export const cells: Cell[] = [
   { id: 'openai/gpt-6-luna', keyEnv: 'OPENAI_API_KEY', model: openai('gpt-6-luna'), price: usd([0.1, 0.01, 0.5, 0.125]) },
   { id: 'anthropic/claude-sonnet-5.5', keyEnv: 'ANTHROPIC_API_KEY', model: anthropic('claude-sonnet-5-5'), price: usd([2, 0.1, 10, 2.5]) },
   { id: 'anthropic/claude-haiku-5.5', keyEnv: 'ANTHROPIC_API_KEY', model: anthropic('claude-haiku-5-5'), price: usd([0.1, 0.01, 0.5, 0.125]) },
+
+  ...local.cells,
 ];

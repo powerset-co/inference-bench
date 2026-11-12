@@ -27,20 +27,15 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 24, cache: npm }
       - run: npm ci
+      # Every repository secret goes into .env (which `npm run bench` reads), so adding a provider only needs
+      # its secret, not a change here. .env is gitignored and never uploaded.
+      - name: Load API keys
+        run: jq -r 'to_entries[] | select(.key != "github_token") | "\(.key)=\"\(.value)\""' <<< "$SECRETS" > .env
+        env:
+          SECRETS: ${{ toJSON(secrets) }}
       - run: npm run bench -- $FILTER
         env:
           FILTER: ${{ inputs.filter }}
-          SAIL_API_KEY: ${{ secrets.SAIL_API_KEY }}
-          MODAL_API_KEY: ${{ secrets.MODAL_API_KEY }}
-          MODAL_ENDPOINT_PREFIX: ${{ secrets.MODAL_ENDPOINT_PREFIX }}
-          WAFER_API_KEY: ${{ secrets.WAFER_API_KEY }}
-          BASETEN_API_KEY: ${{ secrets.BASETEN_API_KEY }}
-          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
-          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
-          VULTR_INFERENCE_API_KEY: ${{ secrets.VULTR_INFERENCE_API_KEY }}
-          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       # Keep the raw results even if the run turns out incomplete and no pull request is opened.
       - uses: actions/upload-artifact@v4
         if: always()
