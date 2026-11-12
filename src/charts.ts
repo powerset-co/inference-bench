@@ -5,6 +5,7 @@
 import * as Plot from '@observablehq/plot';
 import { JSDOM } from 'jsdom';
 import { readFileSync } from 'node:fs';
+import { localNames } from './providers.ts';
 
 export type CellSummary = {
   cell: string;
@@ -40,6 +41,7 @@ const PROVIDERS: Record<string, { name: string; logo: string }> = {
   opencode: { name: 'OpenCode Zen', logo: 'opencode' },
   openai: { name: 'OpenAI', logo: 'openai' },
   anthropic: { name: 'Anthropic', logo: 'anthropic' },
+  ...localNames, // from src/providers.local.ts, if present
 };
 const CLOSED = 'Closed models (reference)';
 const dataURI = (svg: string) => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;

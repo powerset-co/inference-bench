@@ -1,2 +1,4 @@
 node_modules
 .env
+# Providers added by a private copy of this repo (see src/providers.ts)
+src/providers.local.ts
