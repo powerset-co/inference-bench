@@ -27,10 +27,13 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 24, cache: npm }
       - run: npm ci
-      # Every repository secret goes into .env (which `npm run bench` reads), so adding a provider only needs
-      # its secret, not a change here. .env is gitignored and never uploaded.
+      # Provider secrets go into .env (which `npm run bench` reads), so adding a provider only needs its secret,
+      # not a change here. Only secrets named *_API_KEY (plus MODAL_ENDPOINT_PREFIX) are passed, so any other
+      # secret added to the repo stays out of the benchmark. .env is gitignored and never uploaded.
       - name: Load API keys
-        run: jq -r 'to_entries[] | select(.key != "github_token") | "\(.key)=\"\(.value)\""' <<< "$SECRETS" > .env
+        run: |
+          jq -r 'to_entries[] | select(.key | test("_API_KEY$|^MODAL_ENDPOINT_PREFIX$")) | "\(.key)=\"\(.value)\""' <<< "$SECRETS" > .env
+          echo "Loaded: $(cut -d= -f1 .env | tr '\n' ' ')" # names only
         env:
           SECRETS: ${{ toJSON(secrets) }}
       - run: npm run bench -- $FILTER
